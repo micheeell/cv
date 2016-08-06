@@ -419,7 +419,7 @@ article details a {
 /* ----------------------------------------- */
 
 .social {
-  width: 96px;
+  width: 112px;
   float: right;
   padding-top: 10px;
 }
@@ -434,6 +434,10 @@ article details a {
   height: 16px;
   margin: 0 0 0 6px;
   padding: 0;
+}
+
+.github-code:hover {
+  color: #4078c0;
 }
 
 /* TIPSY */
