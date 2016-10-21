@@ -415,20 +415,27 @@ article details a {
 }
 
 
-/* SOCIAL ICONS */
+/* SOCIAL ICONS & flags */
 /* ----------------------------------------- */
 
 .social {
   width: 112px;
+}
+
+.i18n {
+  width: 96px;
+}
+
+.i18n, .social {
   float: right;
   padding-top: 10px;
 }
 
-.social ul {
+.i18n ul, .social ul {
   list-style: none;
 }
 
-.social ul li {
+.i18n ul li, .social ul li {
   float: left;
   width: 21px;
   height: 16px;

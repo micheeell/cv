@@ -53,6 +53,10 @@ a, a:hover, a:visited, a:active {
   padding-top: 0;
 }
 
+.entry .section.fr {
+  margin-top: 20px;
+}
+
 h1 {
   width: 500px;
   font-size: 35pt;
@@ -66,6 +70,11 @@ h1.section {
   clear: both;
   width: 720px;
   height: 42pt;
+}
+
+h1.section.fr {
+  width: 740px;
+  font-size: 33pt;
 }
 
 h1 span {
@@ -239,7 +248,7 @@ img.portrait {
   margin-top: -2px;
 }
 
-.social {
+.i18n, .social {
   display: none;
 }
 
