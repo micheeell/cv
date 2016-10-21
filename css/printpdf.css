@@ -1,0 +1,9 @@
+article span.details {
+  width: 528px;
+  margin-left: 24px;
+  float: right;
+}
+
+p {
+  text-align: justify;
+}
