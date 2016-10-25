@@ -1,0 +1,73 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.label-grey {
+  background-color: #777;
+}
+.label-grey[href]:focus, .label-grey[href]:hover {
+  background-color: #5e5e5e;
+}
+.label-blue {
+  background-color: #337ab7;
+}
+.label-blue[href]:focus, .label-blue[href]:hover {
+  background-color: #286090;
+}
+.label-green {
+  background-color: #5cb85c;
+}
+.label-green[href]:focus, .label-green[href]:hover {
+  background-color: #449d44;
+}
+.label-sky {
+  background-color: #5bc0de;
+}
+.label-sky[href]:focus, .label-sky[href]:hover {
+  background-color: #31b0d5;
+}
+.label-orange {
+  background-color: #f0ad4e;
+}
+.label-orange[href]:focus, .label-orange[href]:hover {
+  background-color: #ec971f;
+}
+.label-grey,
+.label-blue,
+.label-green,
+.label-sky,
+.label-orange {
+  font-size: 1.25em;
+  line-height: 2em;
+}
+.info ul li.ad {
+  background-image: url('images/icn-ad.gif');
+  height: auto;
+  margin-bottom: 4px;
+}
+
+.info ul li.mail {
+  background-image: url('images/icn-mail.gif');
+}
+
+.info ul li.tel {
+  background-image: url('images/icn-tel.gif');
+}
+
+.info ul li.web {
+  background-image: url('images/icn-web.gif');
+}
+
+.info.left ul li {
+  padding-left: 26px;
+}
+
+.info ul li {
+  background-repeat: no-repeat;
+  background-position: 0 .1em;
+  height: 25px;
+  display: block;
+  margin-top: -2px;
+  padding-left: 28px;
+}
