@@ -3,6 +3,20 @@ body {
   padding-bottom: 30px;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: #00003f;
+}
+
+.portrait img {
+  max-height: 164px;
+}
+.portrait {
+  text-align: center;
+}
+
 .label-grey {
   background-color: #777;
 }
@@ -33,11 +47,18 @@ body {
 .label-orange[href]:focus, .label-orange[href]:hover {
   background-color: #ec971f;
 }
+.label-red {
+  background-color: #8b0000;
+}
+.label-red[href]:focus, .label-red[href]:hover {
+  background-color: #ff4500;
+}
 .label-grey,
 .label-blue,
 .label-green,
 .label-sky,
-.label-orange {
+.label-orange,
+.label-red {
   font-size: 1.25em;
   line-height: 2em;
 }
@@ -70,4 +91,41 @@ body {
   display: block;
   margin-top: -2px;
   padding-left: 28px;
+}
+
+ul.skills li {
+  float: left;
+  margin: 2px 6px;
+}
+
+ul.skills {
+  list-style-type: none;
+}
+
+article.content nav {
+  font-style: italic;
+  text-align: right;
+  color: #104060;
+}
+
+nav header {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.content.row,
+.presentation.row {
+  margin-bottom: 12px;
+}
+
+a.label {
+  color: #f2f2f2;
+}
+a.label:focus,
+a.label:hover {
+  color: #000;
+}
+.label a,
+.badge a {
+  color: inherit;
 }
