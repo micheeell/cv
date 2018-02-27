@@ -137,6 +137,7 @@ a.label:hover {
 h1.super-title,
 h2.super-title,
 h1.title,
+h2.h1.title,
 h2.title {
   color: #104060;
   text-transform: uppercase;
@@ -148,6 +149,10 @@ h2.title {
   text-overflow: ellipsis;
   white-space: nowrap;
  */
+}
+article.content h4,
+article.content section h5 {
+  display: none;
 }
 #back-to-top {
   position: relative;
