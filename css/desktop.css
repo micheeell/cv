@@ -152,10 +152,12 @@ h1.name {
   line-height: normal;
 }
 
-h1.section {
+h1.section,
+h2.h1.section {
   width: 100%;
   margin-left: 6px;
   padding-left: 8px;
+  text-align: left;
 }
 
 h1 span {
@@ -195,6 +197,11 @@ article.content {
 h3 {
   font-size: 13px;
   color: #4060a0;
+}
+
+article.content h4,
+article.content section h5 {
+  display: none;
 }
 
 h2, article.content nav, article.content aside {
