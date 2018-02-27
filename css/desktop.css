@@ -209,7 +209,7 @@ article.content nav, article.content aside {
   color: #7b90b5;
 }
 
-article mark, article details, article main, p {
+article mark, article details, article section.main, p {
   width: 455px;
   margin-left: 24px;
   float: right;
