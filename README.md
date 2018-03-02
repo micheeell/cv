@@ -45,11 +45,31 @@ See [Online validator](https://validator.w3.org/checklink) or follow instruction
 
 #### Link Checker Local Installation ####
 
+- From package repository:
 ```bash
+sudo apt install w3c-linkchecker
+```
+
+- Manually:
+```bash
+wget http://search.cpan.org/CPAN/authors/id/S/SC/SCOP/W3C-LinkChecker-4.81.tar.gz
+tar -xzf W3C-LinkChecker-4.81.tar.gz
+cd W3C-LinkChecker-4.81/
+perl Makefile.PL
+make
+make test
+sudo make install
 sudo apt install cpanminus
 sudo perl -MCPAN -e 'install W3C::LinkChecker'
 cpanm CSS::DOM
 ```
+
+#### Link Checker usage ####
+
+```bash
+checklink resume.html
+```
+
 
 Licence
 ---
