@@ -1,369 +1,409 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Exp&eacute;riences Professionnelles et Formation de Michael AYOUL">
+  <meta name="author" content="Michael Ayoul">
+  <link rel="icon" href="favicon.ico">
   <title>Michael Ayoul - Curriculum Vit&aelig;</title>
-  <link type="text/css" rel="stylesheet" href="css/desktop.css"/>
-  <link type="text/css" rel="stylesheet" href="css/print.css" media="print"/>
-  <!--[if IE 7]>
-    <link href="css/ie7.css" rel="stylesheet" type="text/css"/>
-  <![endif]-->
-  <!--[if IE 6]>
-    <link href="css/ie6.css" rel="stylesheet" type="text/css"/>
-  <![endif]-->
-  <script src="js/jquery-1.12.4.min.js"></script>
-  <script src="js/jquery.tipsy.min.js"></script>
-  <script src="js/jquery.colorbox-1.6.4.min.js"></script>
-  <script src="js/script.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/mobile.css" rel="stylesheet">
 </head>
 <body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Michael Ayoul</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donn&eacute;es Personnelles <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#main-title">&Eacute;tat Civil</a></li>
+            <li><a href="#goal">Objectif Professionnel</a></li>
+            <li><a href="#edu">Formation</a></li>
+          </ul>
+        </li>
+        <li><a href="#work">Exp&eacute;rience Professionnelle</a></li>
+        <li><a href="#skills">Informatique</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Langues <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="north" href="resume.html" title="English"><img src="files/flag_en.png" alt="See the English version"/> English version</a></li>
+            <li><a class="north" href="index.html" title="Castellano"><img src="files/flag_ar.png" alt="Consultar la versi&oacute;n en espa&ntilde;ol"/> Versi&oacute;n en espa&ntilde;ol</a></li>
+            <li><a class="north" href="curriculum.html" title="Fran&ccedil;ais"><img src="files/flag_fr.png" alt="Ici la version en fran&ccedil;ais"/> Version fran&ccedil;aise</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plus <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="north" href="files/curriculum-ayoul-2018.pdf" title="T&eacute;l&eacute;charger .pdf"><img src="files/pdf.gif" alt="Enregistrer la version pdf"/> T&eacute;l&eacute;charger le pdf</a></li>
+            <li><a class="north" href="javascript:window.print();" title="Imprimir"><img src="files/icon-printer.png" alt="Imprimer" height="16" width="16"/> Imprimer</a></li>
+            <li><a class="north" href="bureau.html" title="Version Bureau"><img src="files/icon-desktop.png" height="16" width="16" alt="Version de Bureau"/> Version de bureau</a></li>
+            <!-- li><a class="north" id="contact" href="contact.html" title="Me Contacter"><img src="files/icon-contact.jpg" alt=""/></a></li -->
+            <li><a class="north" href="https://twitter.com/mayoul26" target="_blank" title="Suivez-moi sur Twitter"><img src="files/icon-twitter.png" height="16" width="16" alt="Suivez moi sur twitter"/> Suivez-moi sur twitter</a></li>
+            <li><a class="north" href="https://github.com/micheeell/cv" target="_blank" title="Voir le code source sur GitHub">
+              <svg width="16" viewBox="0 0 16 16" version="1.1" height="16" class="octicon octicon-mark-github" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              Voir le code sur GitHub
+            </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
 <!-- Begin Wrapper -->
-<div id="wrapper">
-  <div class="wrapper-top" id="top"></div>
-  <div class="wrapper-mid">
-    <!-- Begin Paper -->
-    <div id="paper">
-      <article id="paper-mid">
-        <header style="display: none;"><h2>Mon Curriculum</h2></header>
-        <section class="entry first">
+<div class="container theme-showcase" role="main">
+  <div class="jumbotron" id="top">
+    <div class="presentation row">
+      <div class="portrait col-lg-2">
           <img class="portrait" src="files/face.jpg" alt="Michael Ayoul" title="Michael Ayoul"/>
-          <header id="self">
-            <h2 id="name">Michael Ayoul</h2>
-            <br/>
-            <div class="super-title">Analyste Programmeur</div>
-          </header>
-
-          <div class="social">
-            <ul>
-              <li><a class="north" href="files/curriculum-ayoul-2018.pdf" title="T&eacute;l&eacute;charger le .pdf">
-                <img src="files/pdf.gif" alt="T&eacute;l&eacute;charger la version pdf"/>
-              </a></li>
-              <li><a class="north" href="javascript:window.print();" title="Imprimer">
-                <img src="files/icon-printer.png" alt="Imprimer" height="16" width="16"/>
-              </a></li>
-              <!-- li><a class="north" id="contact" href="contact.html" title="Contact Me"><img src="files/icon-contact.jpg" alt=""/></a></li -->
-              <!-- li><a target="_blank" class="north" id="linkedin" href="http://linkedin.com/" title="LinkedIn"><img src="files/icon-linkedin.jpg" alt=""/></a></li -->
-              <li><a class="north" href="https://twitter.com/mayoul26" target="_blank" title="Suivez-moi sur Twitter">
-                <img src="files/icon-twitter.png" height="16" width="16" alt="twitter"/>
-              </a></li>
-              <li><a class="north github-code" href="https://github.com/micheeell/cv" target="_blank" title="Voir sur GitHub">
-                <svg width="16" viewBox="0 0 16 16" version="1.1" height="16" class="octicon octicon-mark-github" aria-hidden="true">
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                </svg>
-              </a></li>
-            </ul>
-          </div>
-
-          <div class="i18n">
-            <ul>
-              <li><a class="north" href="desktop.html" title="English">
-                <img src="files/flag_en.png" alt="See the English version"/>
-              </a></li>
-              <li><a class="north" href="escritorio.html" title="Castellano">
-                <img src="files/flag_ar.png" alt="Consultar la versi&oacute;n en espa&ntilde;ol"/>
-              </a></li>
-              <li><a class="north" href="curriculum.html" title="Fran&ccedil;ais">
-                <img src="files/flag_fr.png" alt="Ici la version pour tablettes"/>
-              </a></li>
-            </ul>
-          </div>
-
-          <nav class="info left">
-            <ul>
+      </div>
+      <div class="col-lg-10">
+        <div class="row"><div class="col-sm-10">
+          <h1 id="myself" class="super-title">Michael Ayoul</h1>
+          <h2 id="main-title" class="super-title">Analyste Programmeur</h2>
+        </div></div>
+        <div id="personal" class="row">
+          <div class="col-sm-5 info">
+            <ul id="civil">
               <li class="ad">Bouchard 154, LAN&Uacute;S OESTE<br/>
                 Prov. de Buenos Aires, ARGENTINE
               </li>
               <li class="mail"><a href="mailto:michael.ayoul@polytechnique.org">michael.ayoul@polytechnique.org</a></li>
               <li class="tel">+54 9 11 3148 6078</li>
-              <li class="web"><a href="https://micheeell.github.io/cv/curriculum.html" target="_blank">micheeell.github.io/cv/curriculum.html</a>
-              </li>
             </ul>
-          </nav>
-          <nav class="info right">
+          </div>
+          <div class="col-sm-5 info">
             <ul>
+              <li class="online"><a href="https://micheeell.github.io/cv/curriculum.html" target="_blank">micheeell.github.io/cv/curriculum.html</a></li>
               <li class="age">38 ans <small>(n&eacute; le 26 f&eacute;vrier 1980)</small></li>
               <li class="nationality">Fran&ccedil;ais</li>
               <li class="family">Mari&eacute;, deux enfants</li>
               <!-- li class="document">DNI: 94.249.530</li -->
             </ul>
-          </nav>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <section class="entry">
-          <h2>Objectif Professionnel</h2>
-          <p>
+  <div class="jumbotron" id="goal">
+    <h2 class="h1 title">Objectif Professionnel</h2>
+    <p>
             Participer au succ&egrave;s d'une multinationale,
             en tirant profit &agrave; la fois de mon esprit d'analyse
             et de mes aptitudes pour la communication.
-          </p>
-        </section>
+    </p>
+  </div>
 
         <!-- Begin Work XP -->
-        <section class="entry">
-          <header><h2 class="h1 section fr">Exp&eacute;rience Professionnelle</h2></header>
-          <article class="content">
-            <h4>Lyracons SA</h4>
-            <nav>
-              <h3>Mars 2014 - aujourd'hui</h3>
-              4 ans
-            </nav>
-            <mark><a href="http://www.lyracons.com/" target="_blank">Lyracons S.A</a>, Buenos Aires, Argentine.</mark>
-            <br/>
-            <details open>
-              <summary>D&eacute;veloppeur</summary>
-              <em>solutions eCommerce
+  <div class="jumbotron" id="work">
+    <header><h2 class="h1 title section fr">Exp&eacute;rience Professionnelle</h2></header>
+    <article class="content row">
+      <h4>Lyracons S.A.</h4>
+      <nav class="col-sm-3">
+        <header>Mars 2014 - aujourd'hui</header>
+        4 ans
+      </nav>
+      <section class="col-sm-9">
+        <h5>D&eacute;veloppeur</h5>
+        <mark><a href="http://www.lyracons.com/" target="_blank">Lyracons S.A</a>, Buenos Aires, Argentine.</mark>
+        <br/>
+        <span class="details"><em>D&eacute;veloppeur
+                &hyphen; solutions eCommerce
                 &hyphen; Modules pour les plateformes de <a href="https://magento.com" target="_blank">Magento</a>,
                 <a href="https://wordpress.org" target="_blank">Wordpress</a></em>
-            </details>
-          </article>
-          <article class="content">
+        </span>
+      </section>
+    </article>
+    <article class="content row">
             <h4>W3IT Solutions</h4>
-            <nav>
-              <h3>Septembre 2011 - F&eacute;vrier 2014</h3>
-              3 ans
-            </nav>
-            <mark><a href="http://w3itsolutions.net/" target="_blank">W3IT Solutions</a>, Buenos Aires.</mark>
-            <br/>
-            <details open>
-              <summary>D&eacute;veloppeur</summary>
-              <em>Sites web en html, PHP (orient&eacute;s &agrave; l'eCommerce)&hellip;</em>
-            </details>
-          </article>
-          <article class="content">
+      <nav class="col-sm-3">
+        <header>Septembre 2011 - F&eacute;vrier 2014</header>
+        3 ans
+      </nav>
+      <section class="col-sm-9">
+        <h5>D&eacute;veloppeur</h5>
+        <mark><a href="http://w3itsolutions.net/" target="_blank">W3IT Solutions</a>, Buenos Aires.</mark>
+        <br/>
+        <span class="details"><em>D&eacute;veloppeur &hyphen; Sites web en html, PHP (orient&eacute;s &agrave; l'eCommerce)&hellip;</em></span>
+      </section>
+    </article>
+    <article class="content row">
             <h4>Edora System</h4>
-            <nav>
-              <h3>Juillet 2009 - Ao&ucirc;t 2011</h3>
-              2 ans
-            </nav>
-            <mark><a href="https://www.edorasystem.com/" target="_blank">Edora System</a>, Buenos Aires.</mark>
-            <details open>
-              <summary>D&eacute;veloppeur IT</summary>
-              <em>Programmation en Java &amp; PHP &hyphen;
-                D&eacute;veloppement d'applications pour smartphone (iPhone, Android)</em>
-            </details>
-          </article>
-          <article class="content">
+      <nav class="col-sm-3">
+        <header>Juillet 2009 - Ao&ucirc;t 2011</header>
+        2 ans
+      </nav>
+      <section class="col-sm-9">
+        <h5>Programmeur</h5>
+        <mark><a href="https://www.edorasystem.com/fr/" target="_blank">Edora System</a>, Buenos Aires.</mark>
+        <br/>
+        <span class="details"><em>D&eacute;veloppeur IT - Programmation en Java &amp; PHP - D&eacute;veloppement
+              d'applications pour smartphone (iPhone, Android)</em></span>
+      </section>
+    </article>
+    <article class="content row">
             <h4>USAL</h4>
-            <nav>
-              <h3>Septembre 2008 - D&eacute;cembre 2009</h3>
-              2 ans
-            </nav>
-            <mark><a href="http://www.usal.edu.ar/" target="_blank">Universidad del Salvador</a>, Buenos Aires.</mark>
-            <details open>
-              <summary>Professeur de Math&eacute;matiques</summary>
-              <em>Cours Magistraux et Travaux Dirig&eacute;s dans le cadre du programme international <a
-                      href="http://lacondamine.usal.edu.ar/" target="_blank">La Condamine</a> &hyphen;
-                Charg&eacute; de l'enseignement de &laquo;Math&eacute;matiques pour l'&Eacute;conomiste&raquo;.</em>
-            </details>
-          </article>
-          <article class="content">
+      <nav class="col-sm-3">
+        <header>Septembre 2008 - D&eacute;cembre 2009</header>
+        2 ans
+      </nav>
+      <section class="col-sm-9">
+              <h5>Professeur</h5>
+        <mark>Programme <a href="http://lacondamine.usal.edu.ar/" target="_blank"><em>La Condamine</em></a>, <a href="http://www.usal.edu.ar/" target="_blank">Universidad del Salvador</a>, Buenos Aires.</mark>
+        <br/>
+        <span class="details"><em>Professeur de math&eacute;matiques &hyphen;
+          Responsable du cours &laquo;Math&eacute;matiques pour l'&eacute;conomiste&raquo;.</em></span>
+      </section>
+    </article>
+    <article class="content row">
             <h4>Lyc&eacute;e Jean Mermoz</h4>
-            <nav>
-              <h3>F&eacute;vrier 2009 - Juillet 2009</h3>
-              1 semestre
-            </nav>
-            <mark><a href="http://lyceemermoz.edu.ar/m10/" target="_blank">Lyc&eacute;e Franco-Argentin Jean Mermoz</a>,
-              Buenos Aires.
-            </mark>
-            <details>
-              <summary>Professeur de <abbr title="Sciences de la Vie et de la Terre">SVT</abbr>.</summary>
-              Introduction &agrave; l'immunologie, la g&eacute;n&eacute;tique, la g&eacute;ologie&hellip; Pr&eacute;paration &agrave; l'&eacute;preuve orale du
-              baccalaur&eacute;at (s&eacute;rie L).
-            </details>
-          </article>
-          <article class="content">
+      <nav class="col-sm-3">
+        <header>F&eacute;vrier 2009 - Juillet 2009</header>
+        1 semestre
+      </nav>
+      <section class="col-sm-9">
+        <h5>Enseignant</h5>
+        <mark><a href="http://lyceemermoz.edu.ar/m10/index.php/" target="_blank">Lyc&eacute;e Franco-Argentin Jean Mermoz</a>,
+          Buenos Aires.</mark>
+        <br/>
+        <span class="details"><em>Professeur de <abbr title="Sciences de la Vie et de la Terre">SVT</abbr>.</em></span>
+      </section>
+    </article>
+    <article class="content row">
             <h4>Todacom SA</h4>
-            <nav>
-              <h3>Septembre 2008 - Juillet 2009</h3>
-              1 an
-            </nav>
-            <mark>Todacom S.A, Buenos Aires.</mark>
-            <details>
-              <summary>D&eacute;veloppeur</summary>
-              <em>programmation en html, JavaScript, VisualBasic&hellip;</em>
-            </details>
-          </article>
-          <article class="content">
+      <nav class="col-sm-3">
+        <header>Septembre 2008 - Juillet 2009</header>
+        1 an
+      </nav>
+      <section class="col-sm-9">
+        <h5>D&eacute;veloppeur</h5>
+        <mark>Todacom S.A, Buenos Aires.</mark>
+        <br/>
+        <span class="details"><em>D&eacute;veloppeur - Programmation en html, JavaScript, VisualBasic&hellip;</em></span>
+      </section>
+    </article>
+    <article class="content row">
             <h4>ATER</h4>
-            <nav>
-              <h3>Septembre 2004 - Ao&ucirc;t 2008</h3>
-              4 ans
-            </nav>
-            <mark><a href="http://www.enac.fr/" target="_blank">ENAC</a> (&Eacute;cole Nationale d'Aviation Civile)
-              &amp; <a href="http://www.univ-toulouse.fr/" target="_blank">Universit&eacute; Paul Sabatier</a>,
-              Toulouse, France.
-            </mark>
-            <details>
-              <summary>Professeur</summary>
-              <em>Cours &amp; Travaux Dirig&eacute;s de Math&eacute;matiques fondamentales et appliqu&eacute;es, Probabilit&eacute;s,
-                Statistiques&hellip;</em>
-            </details>
-          </article>
-          <article class="content">
+      <nav class="col-sm-3">
+        <header>Septembre 2004 - Ao&ucirc;t 2008</header>
+        4 ans
+      </nav>
+      <section class="col-sm-9">
+        <h5>Professeur de Math&eacute;matiques</h5>
+        <mark><a href="http://www.enac.fr/" target="_blank"><abbr title="&Eacute;cole Nationale d'Aviation Civile">ENAC</abbr></a>
+          &amp; <a href="http://www.univ-toulouse.fr/" target="_blank">Universit&eacute; Paul Sabatier</a>,
+          Toulouse, France.</mark>
+        <br/>
+        <span class="details"><em>Professeur de math&eacute;matiques fondamentales, probabilit&eacute;s, statistiques&hellip;</em></span>
+      </section>
+    </article>
+    <article class="content row">
             <h4>Colleur</h4>
-            <nav>
-              <h3>Septembre 2001 - Juillet 2006</h3>
-              5 ans
-            </nav>
-            <mark><a href="http://louislegrand.org" target="_blank">Lyc&eacute;e Louis-le-Grand</a>,
-              Paris et <a href="http://fermat.entmip.fr/" target="_blank">Lyc&eacute;e Pierre de Fermat</a>, Toulouse.
-            </mark>
-            <details open>
-              <summary>Interrogateur</summary>
-              <em><a href="https://fr.wikipedia.org/wiki/Colle_(pr%C3%A9pa)" target="_blank">Examinateur</a>
-                en <a href="https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles"
-                      target="_blank"><abbr
-                        title="Classes Pr&eacute;paratoires aux Grandes &Eacute;coles">CPGE</abbr></a>.</em></details>
-          </article>
-        </section>
+      <nav class="col-sm-3">
+        <header>Septembre 2001 - Juillet 2006</header>
+        5 ans
+      </nav>
+      <section class="col-sm-9">
+        <h5>Examinateur</h5>
+        <mark><a href="http://louislegrand.org" target="_blank">Lyc&eacute;e Louis-le-Grand</a>,
+          Paris, et <a href="http://fermat.entmip.fr/" target="_blank">Lyc&eacute;e Pierre de Fermat</a>, Toulouse.</mark>
+        <br/>
+        <span class="details"><em>Examinateur en <a href="https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles" target="_blank"><abbr title="Classes Pr&eacute;paratoires aux Grandes &Eacute;coles">CPGE</abbr></a>.</em></span>
+      </section>
+    </article>
+  </div>
         <!-- End Work XP -->
 
         <!-- Begin Education -->
-        <section class="entry">
-          <h2 class="h1 section">Formation</h2>
-          <article class="content">
+  <div class="jumbotron" id="edu">
+    <h2 class="h1 section title">Formation</h2>
+    <article class="content row">
             <h4>Doctorat</h4>
-            <nav>
-              <h3>2004-2008</h3>
-            </nav>
-            <section class="main">
-              <h5>G&eacute;om&eacute;trie Diff&eacute;rentielle</h5>
-              <strong>Pr&eacute;paration d'une Th&egrave;se en Math&eacute;matiques Pures</strong>,
-              <a href="https://www.math.univ-toulouse.fr/?lang=en" target="_blank">Universit&eacute; Paul Sabatier</a>,
-              Toulouse, France.
-            </section>
+      <nav class="col-sm-3">
+        <header>2004-2008</header>
+      </nav>
+      <section class="col-sm-9">
+        <h5>Hamilton</h5>
+        <strong>Pr&eacute;paration d'une th&egrave;se en math&eacute;matiques pures</strong>,
+        <a href="https://www.math.univ-toulouse.fr/" target="_blank">Universit&eacute; Paul Sabatier</a>,
+        Toulouse, France.
             <!-- details></details -->
-          </article>
-          <article class="content">
+      </section>
+    </article>
+    <article class="content row">
             <h4>DEA</h4>
-            <nav>
-              <h3>2004</h3>
-            </nav>
-            <section class="main">
+      <nav class="col-sm-3">
+        <header>2004</header>
+      </nav>
+      <section class="col-sm-9">
               <h5>G&eacute;om&eacute;trie de Poisson</h5>
-              <strong><abbr title="Dipl&ocirc;me d'&Eacute;tudes Avanc&eacute;es">DEA</abbr></strong> en Math&eacute;matiques
-              Pures,
+        <strong><abbr title="Dipl&ocirc;me d'&Eacute;tudes Avanc&eacute;es">D.E.A.</abbr></strong>,
               Universit&eacute; Paul Sabatier.
-            </section>
-            <details>
-              <summary>Dipl&ocirc;me d'&Eacute;tudes Avanc&eacute;es</summary>
-              <em><strong>Mention honorable</strong></em>
-            </details>
-          </article>
-          <article class="content">
+        <br/><span class="details"><em>Mention honorable</em></span>
+      </section>
+    </article>
+    <article class="content row">
             <h4>&Eacute;cole Polytechnique</h4>
-            <nav>
-              <h3>2000-2005</h3>
-            </nav>
-            <section class="main">
-              <h5>Études Polytechniques</h5>
-              Dipl&ocirc;me d'ing&eacute;nieur de l'<a href="http://www.polytechnique.edu/" target="_blank">&Eacute;cole
-              Polytechnique</a>.
-            </section>
-            <details open>
-              <summary>Cursus polytechnicien</summary>
-              <ul class="small">
-                <li>Licence de Math&eacute;matiques et Physique (Master).</li>
-                <li>Majeures d'&Eacute;conomie, Math&eacute;matiques, Biologie et Physique.</li>
-              </ul>
-            </details>
-          </article>
-        </section>
+      <nav class="col-sm-3">
+        <header>2000-2005</header>
+      </nav>
+      <section class="col-sm-9">
+        <h5>Cursus Polytechnicien</h5>
+        <div>
+          Dipl&ocirc;me d'ing&eacute;nieur de l'<a href="https://www.polytechnique.edu/" target="_blank">&Eacute;cole Polytechnique</a>.
+        </div>
+        <div class="details">
+          <ul class="small">
+            <li>Licence de Math&eacute;matiques et Physique (Master).</li>
+            <li>Majeures d'&Eacute;conomie, Math&eacute;matiques, Biologie et Physique.</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </div>
         <!-- End Education -->
 
-        <div class="clear"></div>
-
         <!-- Begin IT skills -->
-        <section class="entry">
-          <h2 class="h1 section">Programmation</h2>
-          <article class="content">
+  <div class="jumbotron" id="skills">
+    <header><h2 class="h1 section title">Programmation</h2></header>
+    <article class="content row">
             <h4>Plateformes</h4>
-            <aside><h3>Plateformes</h3></aside>
-            <ul class="skills">
-              <li><a href="https://magento.com" target="_blank">Magento</a></li>
-              <li><a href="https://wordpress.org" target="_blank">Wordpress</a></li>
-              <li><a href="https://www.joomla.org" target="_blank">Joomla</a></li>
-              <li><a href="http://www.yiiframework.com" target="_blank">Yii</a></li>
-              <li><a href="https://symfony.com" target="_blank">Symfony</a></li>
-            </ul>
-          </article>
-          <article class="content">
-            <h4>Languages</h4>
-            <aside><h3>Languages du Web</h3>
-              <em>(Dialectes &amp; Librairies)</em></aside>
-            <ul class="skills">
-              <li>PHP</li>
-              <li>html (<a href="https://www.w3.org/TR/xhtml1/#xhtml" target="_blank">xhtml</a>
-                / <a href="https://www.w3.org/TR/html5/" target="_blank">html5</a>)
-              </li>
-              <li>JavaScript (<a href="https://jquery.com" target="_blank">jQuery</a>
-                / <a href="http://prototypejs.org" target="_blank">prototype</a>)
-              </li>
-              <li>SQL (<a href="https://www.mysql.com" target="_blank">MySQL</a>
-                / <a href="https://www.postgresql.org" target="_blank">PostgreSQL</a>)
-              </li>
-              <li>CSS (<a href="https://sass-lang.com" target="_blank">sass</a>
-                / <a href="http://lesscss.org" target="_blank">less</a>)
-              </li>
-            </ul>
-          </article>
-          <article class="content">
+      <aside class="col-sm-3"><h4>Plataformas web</h4></aside>
+      <section class="col-sm-9">
+        <h5>Liste de Plateformes</h5>
+        <ul class="skills">
+          <li><a href="https://magento.com" target="_blank" class="label label-orange">Magento</a></li>
+          <li><a href="https://wordpress.org" target="_blank" class="label label-blue">Wordpress</a></li>
+          <li><a href="https://www.joomla.org" target="_blank" class="label label-green">Joomla</a></li>
+          <li><a href="http://www.yiiframework.com" target="_blank" class="label label-sky">Yii</a></li>
+          <li><a href="http://symfony.com" target="_blank" class="label label-grey">Symfony</a></li>
+        </ul>
+      </section>
+    </article>
+    <article class="content row">
+      <h4>Langages Web</h4>
+      <aside class="col-sm-3"><h4>Langage web &amp; librairies</h4></aside>
+      <section class="col-sm-9">
+        <h5>Liste de Librairies</h5>
+        <ul class="skills">
+          <li><span class="label label-red">PHP</span></li>
+          <li><span class="label label-orange">html
+              <span class="badge"><a href="https://www.w3.org/TR/xhtml1/#xhtml" target="_blank">xhtml</a>
+              / <a href="https://www.w3.org/TR/html/" target="_blank">html5</a></span>
+            </span></li>
+          <li><span class="label label-sky">JavaScript
+              <span class="badge"><a href="http://jquery.com" target="_blank">jQuery</a>
+              / <a href="http://prototypejs.org" target="_blank">prototype</a>
+                <!-- / <a href="http://getbootstrap.com" target="_blank">bootstrap</a> -->
+                </span>
+            </span></li>
+          <li><span class="label label-green">SQL
+              <span class="badge"><a href="https://www.mysql.com" target="_blank">MySQL</a>
+              / <a href="https://www.postgresql.org" target="_blank">PostgreSQL</a></span>
+            </span></li>
+          <li><span class="label label-blue">CSS
+              <span class="badge"><a href="http://sass-lang.com" target="_blank">sass</a>
+              / <a href="http://lesscss.org" target="_blank">less</a></span>
+            </span></li>
+        </ul>
+      </section>
+    </article>
+    <article class="content row">
             <h4>Programmation</h4>
-            <aside><h3>Autres languages</h3></aside>
-            <ul class="skills">
-              <li><a href="https://www.oracle.com/java/index.html" target="_blank">Java</a></li>
-              <li><a href="https://help.adobe.com/livedocs/specs/actionscript/3/wwhelp/wwhimpl/js/html/wwhelp.htm"
-                     target="_blank">actionScript</a></li>
-              <li><a href="https://www.adobe.com/products/flex.html" target="_blank">flex</a></li>
-              <li><a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a></li>
-              <li><a href="https://www.python.org/" target="_blank">python</a></li>
-            </ul>
-          </article>
-          <article class="content">
+      <aside class="col-sm-3"><h4>Autres langages</h4></aside>
+      <section class="col-sm-9">
+        <h5>Liste de Langages</h5>
+        <ul class="skills">
+          <li><span class="label label-blue">
+            <a href="https://www.oracle.com/java/index.html" target="_blank">Java</a>
+          </span></li>
+          <li><span class="label label-orange">
+            <a href="https://help.adobe.com/livedocs/specs/actionscript/3/wwhelp/wwhimpl/js/html/wwhelp.htm"
+               target="_blank">actionScript</a>
+          </span></li>
+          <li><span class="label label-grey">
+            <a href="https://www.adobe.com/products/flex.html" target="_blank">flex</a>
+          </span></li>
+          <li><span class="label label-green">
+            <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>
+          </span></li>
+          <li><span class="label label-sky">
+            <a href="https://www.python.org/" target="_blank">python</a></span>
+          </li>
+        </ul>
+      </section>
+    </article>
+    <article class="content row">
             <h4>OS</h4>
-            <aside><h3>Syst&egrave;mes d'Exploitation</h3></aside>
-            <ul class="skills">
-              <li>Linux (debian, redhat)</li>
-              <li>Windows</li>
-              <li>Android</li>
-              <li>iOS/MacOS</li>
-            </ul>
-          </article>
-          <article class="content">
+      <aside class="col-sm-3"><h4>Syst&egrave;mes d'Exploitation</h4></aside>
+      <section class="col-sm-9">
+        <h5>Liste d'OS</h5>
+        <ul class="skills">
+          <li><span class="label label-red">Linux
+              <span class="badge">debian, redhat</span>
+            </span></li>
+          <li><span class="label label-green">Windows</span></li>
+          <li><span class="label label-sky">Android</span></li>
+          <li><span class="label label-grey">iOS/MacOS</span></li>
+        </ul>
+      </section>
+    </article>
+    <article class="content row">
             <h4>Outils</h4>
-            <aside><h3>Programmes &amp; outils</h3></aside>
-            <ul class="skills">
-              <li>
-                <a target="_blank" href="https://nginx.org">nginx</a>
-                /
-                <a target="_blank" href="https://www.apache.org/">apache</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.docker.com/">docker</a>
-                /
-                <a target="_blank" href="https://www.vagrantup.com/">vagrant</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://git-scm.com/">Git</a>
-                /
-                <a target="_blank" href="https://subversion.apache.org/">svn</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.libreoffice.org/">office</a>&hellip;
-              </li>
-            </ul>
-          </article>
-        </section>
-        <!-- End IT skills -->
-      </article>
-      <div class="clear"></div>
-      <div class="paper-bottom"></div>
-    </div>
-    <!-- End Paper -->
+      <aside class="col-sm-3"><h4>Programmes &amp; outils</h4></aside>
+      <section class="col-sm-9">
+        <h5>Liste d'outils</h5>
+        <ul class="skills">
+          <li><span class="label label-grey"><a target="_blank" href="https://nginx.org">nginx</a>/<a target="_blank" href="https://www.apache.org/">apache</a></span></li>
+          <li><span class="label label-blue"><a target="_blank" href="https://www.docker.com/">docker</a>/<a target="_blank" href="https://www.vagrantup.com/">vagrant</a></span></li>
+          <li><span class="label label-red"><a target="_blank" href="https://git-scm.com/">Git</a>/<a target="_blank" href="https://subversion.apache.org/">svn</a></span></li>
+          <li><span class="label label-green"><a target="_blank" href="https://www.libreoffice.org/">office</a></span>&nbsp;&hellip;</li>
+        </ul>
+      </section>
+    </article>
   </div>
-  <div class="wrapper-bottom"></div>
+        <!-- End IT skills -->
+      <div class="clear"></div>
+
+  <div id="back-to-top"><a href="#top">Haut de page</a></div>
 </div>
 <!-- End Wrapper -->
-<div id="message"><a href="#top" id="top-link">Haut de page</a></div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 </body>
 </html>
