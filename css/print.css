@@ -57,7 +57,7 @@ a, a:hover, a:visited, a:active {
   margin-top: 20px;
 }
 
-h1 {
+h1, h2.h1, header.h1 {
   width: 500px;
   font-size: 35pt;
   line-height: normal;
@@ -66,18 +66,26 @@ h1 {
   text-transform: uppercase;
 }
 
-h1.section {
+h1.section,
+h2.h1.section {
   clear: both;
   width: 720px;
   height: 42pt;
+  text-align: left;
 }
 
-h1.section.fr {
+header.h1 {
+  font-weight: bold;
+}
+
+h1.section.fr,
+h2.h1.section.fr {
   width: 740px;
   font-size: 33pt;
 }
 
-h1 span {
+h1 span,
+header.h1 span {
   font-size: 21pt;
   display: block;
   margin-top: 20px;
@@ -110,10 +118,24 @@ article mark {
   text-transform: uppercase;
 }
 
-article mark, article details, article main, p {
+article mark, article details,
+article.content section.main,
+article main, p {
   float: right;
   margin: 0 0 0 24px;
   width: 530px;
+}
+
+article.content h4,
+article.content section h5 {
+  display: none;
+}
+
+article span.details,
+article.content div.details {
+  width: 528px;
+  margin-left: 24px;
+  float: right;
 }
 
 ul.list {
@@ -190,7 +212,7 @@ img.portrait {
   float: left;
 }
 
-.self {
+.self, header.h1.self {
   float: left;
   width: 480px;
   margin-left: 38px;
