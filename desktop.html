@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -10,26 +11,27 @@
     <!--[if IE 6]>
     <link href="css/ie6.css" rel="stylesheet" type="text/css"/>
     <![endif]-->
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="js/jquery.tipsy.min.js"></script>
-    <script type="text/javascript" src="js/jquery.colorbox-1.6.4.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.tipsy.min.js"></script>
+    <script src="js/jquery.colorbox-1.6.4.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 <!-- Begin Wrapper -->
 <div id="wrapper">
-    <div class="wrapper-top"></div>
+    <div class="wrapper-top" id="top"></div>
     <div class="wrapper-mid">
-        <a name="top"></a>
         <!-- Begin Paper -->
         <div id="paper">
             <article id="paper-mid">
+                <header style="display: none;"><h2>My R&eacute;sum&eacute;</h2></header>
                 <section class="entry first">
                     <img class="portrait" src="files/face.jpg" alt="Michael Ayoul" title="Michael Ayoul"/>
 
-                    <header class="self">
-                        <h1 class="name">Michael Ayoul<br/>
-                            <span>Web Developer</span></h1>
+                    <header id="self">
+                        <h2 id="name">Michael Ayoul</h2>
+                        <br/>
+                        <div class="super-title">Web Developer</div>
                     </header>
 
                     <div class="social">
@@ -37,7 +39,8 @@
                             <li><a class="north" href="files/resume-ayoul-2018.pdf" title="Download .pdf"><img src="files/pdf.gif" alt="Download pdf version"/></a></li>
                             <li><a class="north" href="javascript:window.print();" title="Print"><img src="files/icon-printer.png" alt="Print" height="16" width="16"/></a></li>
                             <!-- li><a class="north" id="contact" href="contact.html" title="Contact Me"><img src="files/icon-contact.jpg" alt=""/></a></li -->
-                            <li><a class="north" href="https://twitter.com/micheeel" target="_blank" title="Follow me on Twitter"><img src="files/icon-twitter.png" height="16" width="16" alt="twitter"/></a></li>
+                            <!-- li><a class="north" id="linkedin" href="http://linkedin.com" title="My linkedin profile"><img src="files/icon-linkedin.jpg" alt=""/></a></li -->
+                            <li><a class="north" href="https://twitter.com/mayoul26" target="_blank" title="Follow me on Twitter"><img src="files/icon-twitter.png" height="16" width="16" alt="twitter"/></a></li>
                             <li><a class="north github-code" href="https://github.com/micheeell/cv" target="_blank" title="Check me on GitHub">
                                 <svg width="16" viewBox="0 0 16 16" version="1.1" height="16" class="octicon octicon-mark-github" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
                             </a></li>
@@ -46,9 +49,9 @@
 
                     <div class="i18n">
                         <ul>
-                            <li><a class="north" href="resume.html" title="English"><img src="files/flag_en.png" alt="See the English version"/></a></li>
-                            <li><a class="north" href="index.html" title="Castellano"><img src="files/flag_ar.png" alt="Consultar la versi&oacute;n en espa&ntilde;ol"/></a></li>
-                            <li><a class="north" href="curriculum.html" title="Fran&ccedil;ais"><img src="files/flag_fr.png" alt="Ici la version en fran&ccedil;ais"/></a></li>
+                            <li><a class="north" href="resume.html" title="English"><img src="files/flag_en.png" alt="See the mobile version"/></a></li>
+                            <li><a class="north" href="escritorio.html" title="Castellano"><img src="files/flag_ar.png" alt="Consultar la versi&oacute;n en espa&ntilde;ol"/></a></li>
+                            <li><a class="north" href="bureau.html" title="Fran&ccedil;ais"><img src="files/flag_fr.png" alt="Ici la version en fran&ccedil;ais"/></a></li>
                         </ul>
                     </div>
 
@@ -81,120 +84,156 @@
 
                 <!-- Begin Work XP -->
                 <section class="entry">
-                    <header><h1 class="section">Work Experience</h1></header>
+                    <header><h2 class="h1 section">Work Experience</h2></header>
                     <article class="content">
+                        <h4>Lyracons SA</h4>
                         <nav>
-                            <h3>March 2013 - today</h3>
+                            <h3>March 2014 - today</h3>
                             4 years
                         </nav>
                         <mark><a href="http://www.lyracons.com/" target="_blank">Lyracons S.A</a>, Buenos Aires, Argentina.</mark><br/>
-                        <details open><em>Web developer
-                            &hyphen; eCommerce solutions
-                            &hyphen; Modules for <a href="http://magento.com" target="_blank">Magento</a>,
-                            <a href="http://wordpress.org" target="_blank">Wordpress</a> platforms</em></details>
+                        <details open>
+                            <summary>Web developer</summary>
+                            <em>eCommerce solutions
+                            &hyphen; Modules for <a href="https://magento.com" target="_blank">Magento</a>,
+                            <a href="https://wordpress.org" target="_blank">Wordpress</a> platforms</em>
+                        </details>
                     </article>
                     <article class="content">
+                        <h4>W3IT Solutions</h4>
                         <nav>
-                            <h3>September 2011 - February 2013</h3>
-                            2 years
+                            <h3>September 2011 - February 2014</h3>
+                            3 years
                         </nav>
                         <mark><a href="http://w3itsolutions.net/" target="_blank">W3IT Solutions</a>, Buenos Aires.</mark><br/>
-                        <details open><em>Web developer &hyphen; Websites in html, PHP (eCommerce oriented)&hellip;</em></details>
+                        <details open>
+                            <summary>Web Developer</summary>
+                            <em>Websites in html, PHP (eCommerce oriented)&hellip;</em>
+                        </details>
                     </article>
                     <article class="content">
+                        <h4>Edora System</h4>
                         <nav>
                             <h3>July 2009 - August 2011</h3>
                             2 years
                         </nav>
-                        <mark><a href="http://www.edorasystem.com/ES/" target="_blank">Edora System</a>, Buenos Aires.</mark>
-                        <details open><em>IT developer &hyphen; Java &amp; PHP programming &hyphen;
-                            Smartphone app development (iPhone, Android)</em></details>
+                        <mark><a href="https://www.edorasystem.com/en/" target="_blank">Edora System</a>, Buenos Aires.</mark>
+                        <details open>
+                            <summary>IT developer</summary>
+                            <em>Java &amp; PHP programming &hyphen; Smartphone app development (iPhone, Android)</em>
+                        </details>
                     </article>
                     <article class="content">
+                        <h4>USAL</h4>
                         <nav>
                             <h3>September 2008 - December 2009</h3>
                             2 years
                         </nav>
                         <mark><a href="http://www.usal.edu.ar/" target="_blank">University of Salvador</a>, Buenos Aires.</mark>
-                        <details open><em>Mathematics Professor for the international program <a href="http://lacondamine.usal.edu.ar/" target="_blank">La Condamine</a> &hyphen;
-                            In charge of the course &laquo;Mathematics for the Economist&raquo;.</em></details>
+                        <details open>
+                            <summary>Mathematics Professor</summary>
+                            <em>Classes for the international program <a href="http://lacondamine.usal.edu.ar/" target="_blank">La Condamine</a> &hyphen;
+                            In charge of the course &laquo;Mathematics for the Economist&raquo;.</em>
+                        </details>
                     </article>
                     <article class="content">
+                        <h4>Mermoz High-School</h4>
                         <nav>
                             <h3>February 2009 - July 2009</h3>
                             1 semester
                         </nav>
-                        <mark><a href="http://lyceemermoz.edu.ar/m10/index.php/en/" target="_blank">Franco-Argentinian High-School Jean Mermoz</a>,
+                        <mark><a href="http://lyceemermoz.edu.ar/m10/index.php/" target="_blank">Franco-Argentinian High-School Jean Mermoz</a>,
                             Buenos Aires.</mark>
-                        <details open><em>Biology teacher.</em></details>
+                        <details>
+                            <summary>Biology teacher</summary>
+                            <em>Introduction to immunology, genetics, geology&hellip; Preparation to French baccalaur&eacute;at biology test</em>
+                        </details>
                     </article>
                     <article class="content">
+                        <h4>TODACOM SA</h4>
                         <nav>
                             <h3>September 2008 - July 2009</h3>
                             1 year
                         </nav>
                         <mark>Todacom S.A, Buenos Aires.</mark>
-                        <details open><em>Developer - html, JavaScript, VisualBasic programming&hellip;</em></details>
+                        <details>
+                            <summary>Developer</summary>
+                            html, JavaScript, VisualBasic programming&hellip;
+                        </details>
                     </article>
                     <article class="content">
+                        <h4>Toulouse University</h4>
                         <nav>
                             <h3>September 2004 - August 2008</h3>
                             4 years
                         </nav>
-                        <mark><a href="http://www.enac.fr/" target="_blank">ENAC</a> (National School of Civil Aviation)
+                        <mark><a href="http://enac.fr/" target="_blank">ENAC</a> (National School of Civil Aviation)
                             &amp; <a href="http://www.univ-toulouse.fr/" target="_blank">Paul Sabatier University</a>,
                             Toulouse, France.</mark>
-                        <details open><em>Professor in fundamental and applied Mathematics, Probabilities, Statistics&hellip;</em></details>
+                        <details open>
+                            <summary>Professor</summary>
+                            <em>Classes in fundamental and applied Mathematics, Probabilities, Statistics&hellip;</em>
+                        </details>
                     </article>
                     <article class="content">
+                        <h4>Prep' School</h4>
                         <nav>
                             <h3>September 2001 - July 2006</h3>
                             5 years
                         </nav>
-                        <mark><a href="http://www.louis-le-grand.org/albedo/index.php" target="_blank">Louis-le-Grand High-School</a>,
+                        <mark><a href="http://louislegrand.org/index.php/anglais-presentations-61" target="_blank">Louis-le-Grand High-School</a>,
                             Paris and <a href="http://fermat.entmip.fr/" target="_blank">Pierre de Fermat High-School</a>, Toulouse.</mark>
-                        <details open><em>Oral examiner in <a href="http://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles" target="_blank">preparatory school</a>.</em></details>
+                        <details open>
+                            <summary>Oral examiner</summary>
+                            <em>Interrogations in <a href="https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles" target="_blank">preparatory school</a>.</em></details>
                     </article>
                 </section>
                 <!-- End Work XP -->
 
                 <!-- Begin Education -->
                 <section class="entry">
-                    <h1 class="section">Education</h1>
+                    <h2 class="h1 section">Education</h2>
                     <article class="content">
+                        <h4>PhD</h4>
                         <nav>
                             <h3>2004-2008</h3>
                         </nav>
-                        <main>
+                        <section class="main">
+                            <h5>Differential Geometry</h5>
                             <strong>Preparation of a PhD in Pure Mathematics</strong>,
                             <a href="https://www.math.univ-toulouse.fr/?lang=en" target="_blank">Paul Sabatier University</a>,
                             Toulouse, France.
-                        </main>
+                        </section>
                         <!-- details></details -->
                     </article>
                     <article class="content">
+                        <h4>Master</h4>
                         <nav>
                             <h3>2004</h3>
                         </nav>
-                        <main>
+                        <section class="main">
+                            <h5>Poisson Geometry</h5>
                             <strong>Master of Advanced Studies</strong> in Pure Mathematics,
                             Paul Sabatier University.
-                        </main>
-                        <details open><em>D.E.A.
-                            (Dipl&ocirc;me d'&Eacute;tudes Avanc&eacute;es)
-                            <strong>with honours</strong>
-                        </em></details>
+                        </section>
+                        <details open>
+                            <summary>D.E.A.</summary>
+                            <em>Dipl&ocirc;me d'&Eacute;tudes Avanc&eacute;es <strong>with honours</strong></em>
+                        </details>
                     </article>
                     <article class="content">
+                        <h4>Ecole Polytechnique</h4>
                         <nav>
                             <h3>2000-2005</h3>
                         </nav>
-                        <main>
-                            <a href="http://www.polytechnique.edu/" target="_blank">&Eacute;cole Polytechnique</a> Engineer Diploma.
-                        </main>
+                        <section class="main">
+                            <h5>Engineer Diploma</h5>
+                            <a href="https://www.polytechnique.edu/" target="_blank">&Eacute;cole Polytechnique</a> Engineer Diploma.
+                        </section>
                         <details open>
+                            <summary>Majors</summary>
                             <ul class="small">
-                                <li>Major in Mathematics and Physics (Master).</li>
+                                <li>Master in Mathematics and Physics.</li>
                                 <li>Intensive classes in Economy, Mathematics, Biology and Physics.</li>
                             </ul>
                         </details>
@@ -206,43 +245,47 @@
 
                 <!-- Begin IT skills -->
                 <section class="entry">
-                    <h1 class="section">Computing</h1>
+                    <h2 class="h1 section">Computing</h2>
                     <article class="content">
+                        <h4>Platforms</h4>
                         <aside><h3>Web platforms</h3></aside>
                         <ul class="skills">
                             <li><a href="https://magento.com" target="_blank">Magento</a></li>
                             <li><a href="https://wordpress.org" target="_blank">Wordpress</a></li>
                             <li><a href="https://www.joomla.org" target="_blank">Joomla</a></li>
                             <li><a href="http://www.yiiframework.com" target="_blank">Yii</a></li>
-                            <li><a href="http://symfony.com" target="_blank">Symfony</a></li>
+                            <li><a href="https://symfony.com" target="_blank">Symfony</a></li>
                         </ul>
                     </article>
                     <article class="content">
+                        <h4>Web Languages</h4>
                         <aside><h3>Web languages &amp; their libraries</h3></aside>
                         <ul class="skills">
                             <li>PHP</li>
                             <li>html (<a href="https://www.w3.org/TR/xhtml1/#xhtml" target="_blank">xhtml</a>
-                                / <a href="http://www.html5rocks.com/es/" target="_blank">html5</a>)</li>
-                            <li>JavaScript (<a href="http://jquery.com" target="_blank">jQuery</a>
+                                / <a href="https://www.w3.org/TR/html5/" target="_blank">html5</a>)</li>
+                            <li>JavaScript (<a href="https://jquery.com" target="_blank">jQuery</a>
                                 / <a href="http://prototypejs.org" target="_blank">prototype</a>)</li>
-                            <li>SQL (<a href="http://www.mysql.com" target="_blank">MySQL</a>
+                            <li>SQL (<a href="https://www.mysql.com" target="_blank">MySQL</a>
                                 / <a href="https://www.postgresql.org" target="_blank">PostgreSQL</a>)</li>
-                            <li>CSS (<a href="http://sass-lang.com" target="_blank">sass</a>
+                            <li>CSS (<a href="https://sass-lang.com" target="_blank">sass</a>
                                 / <a href="http://lesscss.org" target="_blank">less</a>)</li>
                         </ul>
                     </article>
                     <article class="content">
+                        <h4>Programming Languages</h4>
                         <aside><h3>Other languages</h3></aside>
                         <ul class="skills">
-                            <li>Java</li>
-                            <li>actionScript</li>
-                            <li>flex</li>
-                            <li>Ruby on Rails</li>
-                            <li>python</li>
+                            <li><a href="https://www.oracle.com/java/index.html" target="_blank">Java</a></li>
+                            <li><a href="https://help.adobe.com/livedocs/specs/actionscript/3/wwhelp/wwhimpl/js/html/wwhelp.htm" target="_blank">actionScript</a></li>
+                            <li><a href="https://www.adobe.com/products/flex.html" target="_blank">flex</a></li>
+                            <li><a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a></li>
+                            <li><a href="https://www.python.org/" target="_blank">python</a></li>
                         </ul>
                     </article>
                     <article class="content">
-                        <aside><h3>Operative systems</h3></aside>
+                        <h4>OS</h4>
+                        <aside><h3>Operating systems</h3></aside>
                         <ul class="skills">
                             <li>Linux (debian, redhat)</li>
                             <li>Windows</li>
@@ -251,12 +294,13 @@
                         </ul>
                     </article>
                     <article class="content">
+                        <h4>Tools</h4>
                         <aside><h3>Programs &amp; tools</h3></aside>
                         <ul class="skills">
-                            <li>nginx/apache</li>
-                            <li>docker/vagrant</li>
-                            <li>Git/svn</li>
-                            <li>office&hellip;</li>
+                            <li><a target="_blank" href="https://nginx.org">nginx</a>/<a target="_blank" href="https://www.apache.org/">apache</a></li>
+                            <li><a target="_blank" href="https://www.docker.com/">docker</a>/<a target="_blank" href="https://www.vagrantup.com/">vagrant</a></li>
+                            <li><a target="_blank" href="https://git-scm.com/">Git</a>/<a target="_blank" href="https://subversion.apache.org/">svn</a></li>
+                            <li><a target="_blank" href="https://www.libreoffice.org/">office</a>&hellip;</li>
                         </ul>
                     </article>
                 </section>
@@ -271,6 +315,6 @@
     <div class="wrapper-bottom"></div>
 </div>
 <!-- End Wrapper -->
-<div id="message"><a href="#top" id="top-link">Go to top</a></div>
+<div id="message"><a href="#top" id="top-link">Back to top</a></div>
 </body>
 </html>
