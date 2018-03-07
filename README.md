@@ -22,13 +22,13 @@ Welcome to the github repository for my résumé.
 
 ## Description ##
 <a name="description"></a>
-- Github page for my online résumé.
+- Github page for my [online résumé](https://micheeell.github.io/cv/resume.html).
 - Updated once every year.
 - Comments welcome.
 
 ## Facts ##
 <a name="facts"></a>
-- version: 2018
+- version: [2018](https://github.com/micheeell/cv/tree/v2018)
 - available languages:<br>
 ![bandera argentina](./files/flag_ar.png) castellano,<br>
 ![English flag](./files/flag_en.png) English,<br>
@@ -72,11 +72,13 @@ Any contribution, comment or credit is highly appreciated. The best way to contr
 ### W3C Markup Validation Service ###
 <a name="markup-validator"></a>
 
+![Valid HTML](https://www.w3.org/Icons/WWW/w3c_home_nb.png)<br>
 See [Online Validator](https://validator.w3.org/).
 
 ### W3C CSS Validation Service ###
 <a name="css-validator"></a>
 
+![Valid CSS](https://www.w3.org/Icons/valid-css.png)<br>
 See [Online Validator](http://jigsaw.w3.org/css-validator/validator).
 
 
