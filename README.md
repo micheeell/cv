@@ -23,16 +23,16 @@ Welcome to the github repository for my résumé.
 ## Description ##
 <a name="description"></a>
 - Github page for my [online résumé](https://micheeell.github.io/cv/resume.html).
-- Updated once every year.
+- Manually updated regularly.
 - Comments welcome.
 
 ## Facts ##
 <a name="facts"></a>
 - version: [2018](https://github.com/micheeell/cv/tree/v2018)
 - available languages:<br>
-![bandera argentina](./files/flag_ar.png) castellano,<br>
-![English flag](./files/flag_en.png) English,<br>
-![drapeau français](./files/flag_fr.png) français.
+    - ![bandera argentina](./files/flag_ar.png) castellano,<br>
+    - ![English flag](./files/flag_en.png) English,<br>
+    - ![drapeau français](./files/flag_fr.png) français.
 - PDF download
 
 ## Author ##
@@ -58,7 +58,7 @@ Welcome to the github repository for my résumé.
 git clone git@github.com:micheeell/cv.git
 cd cv/
 ```
-Or more simply: `wget https://micheeell.github.io/files/resume-ayoul-2018.pdf`
+Or more simply: `wget https://micheeell.github.io/files/resume-ayoul-2018.pdf`<br>
 **Note:** please update download url for another language.
 
 ## Contribution ##
