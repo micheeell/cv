@@ -14,7 +14,7 @@ Résumé
     + [Link Checker](#link-checker)
       + [checklink locally](#checklink-local)
       + [checklink usage](#checklink-usage)
-  + [Licence](#licence)
+  + [License](#license)
 
 # Introduction
 <a name="introduction"></a>
@@ -117,7 +117,7 @@ checklink resume.html
 ```
 
 
-Licence
+License
 ---
-<a name="licence"></a>
-[OSL - Open Software Licence 3.0](http://opensource.org/licenses/osl-3.0.php)
+<a name="license"></a>
+[OSL - Open Software License 3.0](http://opensource.org/licenses/osl-3.0.php)
