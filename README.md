@@ -14,7 +14,7 @@ Résumé
     + [Link Checker](#link-checker)
       + [checklink locally](#checklink-local)
       + [checklink usage](#checklink-usage)
-  + [Licence](#licence)
+  + [License](#license)
 
 # Introduction
 <a name="introduction"></a>
@@ -58,7 +58,7 @@ Welcome to the github repository for my résumé.
 git clone git@github.com:micheeell/cv.git
 cd cv/
 ```
-Or more simply: `wget https://micheeell.github.io/files/resume-ayoul-2018.pdf`<br>
+Or more simply: `wget https://micheeell.github.io/files/resume-ayoul-2020.pdf`<br>
 **Note:** please update download url for another language.
 
 ## Contribution ##
@@ -117,7 +117,7 @@ checklink resume.html
 ```
 
 
-Licence
+License
 ---
-<a name="licence"></a>
-[OSL - Open Software Licence 3.0](http://opensource.org/licenses/osl-3.0.php)
+<a name="license"></a>
+[OSL - Open Software License 3.0](http://opensource.org/licenses/osl-3.0.php)
