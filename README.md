@@ -58,7 +58,7 @@ Welcome to the github repository for my résumé.
 git clone git@github.com:micheeell/cv.git
 cd cv/
 ```
-Or more simply: `wget https://micheeell.github.io/files/resume-ayoul-2018.pdf`<br>
+Or more simply: `wget https://micheeell.github.io/files/resume-ayoul-2020.pdf`<br>
 **Note:** please update download url for another language.
 
 ## Contribution ##
