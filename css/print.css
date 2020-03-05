@@ -45,7 +45,7 @@ a, a:hover, a:visited, a:active {
 .entry {
   width: 820px;
   display: block;
-  padding-top: 96px;
+  padding-top: 72px;
   clear: both;
 }
 
@@ -221,7 +221,7 @@ img.portrait {
 .info {
   float: left;
   padding-top: 11px;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   font-size: .875em;
 }
 
