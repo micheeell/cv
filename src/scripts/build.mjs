@@ -1,4 +1,4 @@
-// Build each language from template + locale JSON into /dist/{lang}/index.html
+// Build each language from template + locale JSON into /docs/{lang}/index.html
 import fs from "node:fs";
 import path from "node:path";
 
@@ -76,22 +76,22 @@ function render(template, data) {
 	return out;
 }
 
-fs.copyFileSync("files/favicon.ico", "dist/favicon.ico");
-fs.mkdirSync("dist/assets/files", { recursive: true });
+fs.mkdirSync("docs/assets/files", { recursive: true });
+fs.copyFileSync("files/favicon.ico", "docs/favicon.ico");
 const cssFiles = ["main.css", "print.css", "pdf.css"];
 for (const stylesheet of cssFiles) {
-    fs.copyFileSync(`src/styles/${stylesheet}`, `dist/assets/${stylesheet}`);
+    fs.copyFileSync(`src/styles/${stylesheet}`, `docs/assets/${stylesheet}`);
 }
 
 const files = ["flag_ar.png", "flag_fr.png", "flag_en.png", "face.jpg"];
 for (const filename of files) {
-    fs.copyFileSync(`files/${filename}`, `dist/assets/files/${filename}`);
+    fs.copyFileSync(`files/${filename}`, `docs/assets/files/${filename}`);
 }
 
-fs.mkdirSync("dist/assets/icons", { recursive: true });
+fs.mkdirSync("docs/assets/icons", { recursive: true });
 const icons = ["address", "flag", "github", "home", "linkedin", "mail", "pdf", "phone", "print", "search"];
 for (const icon of icons) {
-    fs.copyFileSync(`files/icon-${icon}.svg`, `dist/assets/icons/${icon}.svg`);
+    fs.copyFileSync(`files/icon-${icon}.svg`, `docs/assets/icons/${icon}.svg`);
 }
 
 const templates = ["index", "print"];
@@ -102,10 +102,10 @@ for (const templateFile of templates) {
         const data = JSON.parse(fs.readFileSync(`locales/${lang}.json`, "utf8"));
         const html = render(template, {...data, year});
         const outDir = lang === "es"
-            ? "dist"
-            : `dist/${lang}`;
+            ? "docs"
+            : `docs/${lang}`;
         fs.mkdirSync(outDir, {recursive: true});
         fs.writeFileSync(`${outDir}/${templateFile}.html`, html);
     }
-    console.log(templateFile, "Built dist/*.html for es/en/fr");
+    console.log(templateFile, "Built docs/*.html for es/en/fr");
 }

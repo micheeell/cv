@@ -3,11 +3,11 @@ import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 
-// simple static server for dist
+// simple static server for docs
 const serve = (req, res) => {
-  const filePath = path.join("dist", req.url === "/" ? "en/index.html" : req.url);
+  const filePath = path.join("docs", req.url === "/" ? "en/index.html" : req.url);
   const exists = fs.existsSync(filePath);
-  const file = exists ? filePath : path.join("dist", "en", "index.html");
+  const file = exists ? filePath : path.join("docs", "en", "index.html");
   fs.createReadStream(file).pipe(res);
 };
 const server = http.createServer(serve);
@@ -26,7 +26,7 @@ for (const lang of langs) {
   await page.goto(url, { waitUntil: "networkidle" });
   await page.emulateMedia("print");
   await page.pdf({
-    path: `dist/assets/pdf/CV-ayoul-${lang}.pdf`,
+    path: `docs/assets/pdf/CV-ayoul-${lang}.pdf`,
     format: "A4",
     printBackground: true,
     margin: { top: "20mm", right: "15mm", bottom: "20mm", left: "15mm" }
@@ -35,4 +35,4 @@ for (const lang of langs) {
 
 await browser.close();
 server.close();
-console.log("PDFs written to /pdf");
+console.log("PDFs written to /docs/assets/pdf");

@@ -134,12 +134,12 @@ checklink resume.html
   ```
 + Serve
   ```bash
-  npx http-server dist
+  npx http-server docs
   ```
 
 ### Validators
 
 ```bash
 npx stylelint "src/**/*.{css,scss}"
-htmlhint dist/**/*.html
+htmlhint docs/**/*.html
 ```
