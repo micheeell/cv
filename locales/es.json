@@ -237,7 +237,7 @@
     "os": {
       "title": "OS",
       "subtitle": "Sistemas Operativos",
-      "listTitle": "Listado de Sistemas"
+      "listing": "Listado de Sistemas"
     },
     "tools": {
       "title": "Herramientas",

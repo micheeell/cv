@@ -142,4 +142,9 @@ checklink resume.html
 ```bash
 npx stylelint "src/**/*.{css,scss}"
 htmlhint docs/**/*.html
+# alternate:
+sed -i '/inline-script/ s|^\([[:space:]]*\)//[[:space:]]*|\1|' .htmlhintrc
+htmlhint docs/**/*.html
+# check the only error is the onclick="window.print()" in the 3 index.html files
+git checkout .htmlhintrc
 ```
