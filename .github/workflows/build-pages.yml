@@ -27,11 +27,15 @@ jobs:
       - name: Build static i18n site
         run: node src/scripts/build.mjs
 
-      # 5) Disable Jekyll in the served folder (gh-pages/docs)
+      # 5) delete .gitignore from the build output before deploy:
+      - name: Remove .gitignore from docs
+        run: find ./docs -name ".gitignore" -delete
+
+      # 6) Disable Jekyll in the served folder (gh-pages/docs)
       - name: Disable Jekyll
         run: touch docs/.nojekyll
 
-      # 6.1) HTML validation using W3C Nu Validator
+      # 7.1) HTML validation using W3C Nu Validator
       - name: Validate HTML
         run: |
           for f in docs/**/index.html; do
@@ -39,14 +43,14 @@ jobs:
           done
         # W3C Markup Validation Service (Nu) documentation [6](https://validator.w3.org/)
 
-      # 6.2) CSS validation using W3C CSS Validator
+      # 7.2) CSS validation using W3C CSS Validator
       - name: Validate CSS
         run: |
           curl -s -F output=json -F text="@docs/assets/main.css" https://jigsaw.w3.org/css-validator/validator
           curl -s -F output=json -F text="@docs/assets/print.css" https://jigsaw.w3.org/css-validator/validator
         # W3C CSS Validation Service [7](https://jigsaw.w3.org/css-validator/)
 
-      # 7) Deploy the docs/ output to gh-pages/docs
+      # 8) Deploy the docs/ output to gh-pages/docs
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
