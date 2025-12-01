@@ -1,8 +1,34 @@
 .idea
 .editorconfig
 
-# Ignore build folder
-docs/
+!docs/.nojekyll
+!docs/assets/main.css
+!docs/assets/print.css
+!docs/assets/pdf.css
+!docs/assets/files/face.jpg
+!docs/assets/files/flag_ar.png
+!docs/assets/files/flag_fr.png
+!docs/assets/files/flag_en.png
+!docs/assets/icons/address.svg
+!docs/assets/icons/flag.svg
+!docs/assets/icons/github.svg
+!docs/assets/icons/home.svg
+!docs/assets/icons/linkedin.svg
+!docs/assets/icons/mail.svg
+!docs/assets/icons/pdf.svg
+!docs/assets/icons/phone.svg
+!docs/assets/icons/print.svg
+!docs/assets/icons/search.svg
+!docs/assets/pdf/CV-ayoul-es.pdf
+!docs/assets/pdf/CV-ayoul-fr.pdf
+!docs/assets/pdf/CV-ayoul-en.pdf
+!docs/index.html
+!docs/print.html
+!docs/favicon.ico
+!docs/fr/index.html
+!docs/fr/print.html
+!docs/en/index.html
+!docs/en/print.html
 
 node_modules/
 package-lock.json
