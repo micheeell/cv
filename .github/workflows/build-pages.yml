@@ -2,14 +2,14 @@ name: Build & Deploy GitHub page
 
 on:
   push:
-    branches: [ gh-pages ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1) Get the repo
+      # 1) Checkout source
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 'lts/*'
 
-      # 3) Install deps
+      # 3) Install dependencies
       - name: Install dependencies
         run: npm ci || npm i
 
@@ -27,13 +27,15 @@ jobs:
       - name: Build static i18n site
         run: node src/scripts/build.mjs
 
-      # 5) Disable Jekyll inside the served folder
-      #    Because the site will be served from gh-pages/docs/,
-      #    add .nojekyll to docs/ before deploying.
-      - name: Disable Jekyll for Pages
+      # 5) delete .gitignore from the build output before deploy:
+      - name: Remove .gitignore from docs
+        run: find ./docs -name ".gitignore" -delete
+
+      # 6) Disable Jekyll in the served folder (gh-pages/docs)
+      - name: Disable Jekyll
         run: touch docs/.nojekyll
 
-      # 6.1) HTML validation using W3C Nu Validator
+      # 7.1) HTML validation using W3C Nu Validator
       - name: Validate HTML
         run: |
           for f in docs/**/index.html; do
@@ -41,17 +43,18 @@ jobs:
           done
         # W3C Markup Validation Service (Nu) documentation [6](https://validator.w3.org/)
 
-      # 6.2) CSS validation using W3C CSS Validator
+      # 7.2) CSS validation using W3C CSS Validator
       - name: Validate CSS
         run: |
           curl -s -F output=json -F text="@docs/assets/main.css" https://jigsaw.w3.org/css-validator/validator
           curl -s -F output=json -F text="@docs/assets/print.css" https://jigsaw.w3.org/css-validator/validator
         # W3C CSS Validation Service [7](https://jigsaw.w3.org/css-validator/)
 
-      # 7) Deploy to gh-pages under the "docs" subdirectory
+      # 8) Deploy the docs/ output to gh-pages/docs
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+          publish_branch: gh-pages
           destination_dir: docs

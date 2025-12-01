@@ -1,6 +1,12 @@
 .idea
 .editorconfig
+
 # Build output
 docs/
+
+# But keep these inside docs/
+!docs/**
+!docs/.nojekyll
+
 node_modules/
 package-lock.json
