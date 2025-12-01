@@ -1,10 +1,7 @@
 .idea
 .editorconfig
 
-
-# keep this inside docs/
-!docs/.nojekyll
-# but ignore rest of the build folder
+# Ignore build folder
 docs/
 
 node_modules/
