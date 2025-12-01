@@ -17,11 +17,11 @@ Résumé
   + [License](#license)
 
 # Introduction
-<a name="introduction"></a>
+
 Welcome to the github repository for my résumé.
 
 ## Description ##
-<a name="description"></a>
+
 - Github page for my [online résumé](https://micheeell.github.io/cv/resume.html).
 - Manually updated regularly.
 - Comments welcome.
@@ -36,13 +36,12 @@ Welcome to the github repository for my résumé.
 - PDF download
 
 ## Author ##
-<a name="author"></a>
+
 [@micheeell](https://twitter.com/micheeell)
 
 [@mayoul26](https://twitter.com/mayoul26)
 
 ## to-do ##
-<a name="to-do"></a>
 
 - add contact form using [formspree.io](formspree.io)
 - refactor styles & CSS files
@@ -52,7 +51,6 @@ Welcome to the github repository for my résumé.
 
 
 ## Usage ##
-<a name="usage"></a>
 
 ```bash
 git clone git@github.com:micheeell/cv.git
@@ -62,33 +60,28 @@ Or more simply: `wget https://micheeell.github.io/files/resume-ayoul-2020.pdf`<b
 **Note:** please update download url for another language.
 
 ## Contribution ##
-<a name="contribution"></a>
+
 Any contribution, comment or credit is highly appreciated. The best way to contribute code is to open a [pull request on Github](https://help.github.com/articles/using-pull-requests).
 
 
 ## Validators ##
-<a name="validators"></a>
 
 ### W3C Markup Validation Service ###
-<a name="markup-validator"></a>
 
 ![Valid HTML](https://www.w3.org/Icons/WWW/w3c_home_nb.png)<br>
 See [Online Validator](https://validator.w3.org/).
 
 ### W3C CSS Validation Service ###
-<a name="css-validator"></a>
 
 ![Valid CSS](https://www.w3.org/Icons/valid-css.png)<br>
 See [Online Validator](http://jigsaw.w3.org/css-validator/validator).
 
 
 ### W3C Link Checker ###
-<a name="link-checker"></a>
 
 See [Online validator](https://validator.w3.org/checklink) or follow instructions to install locally for debian-based linux systems.
 
 #### Link Checker Local Installation ####
-<a name="checklink-local"></a>
 
 - From package repository:
 ```bash
@@ -110,14 +103,43 @@ cpanm CSS::DOM
 ```
 
 #### Link Checker usage ####
-<a name="checklink-usage"></a>
 
 ```bash
 checklink resume.html
 ```
 
 
-License
----
-<a name="license"></a>
+### License
 [OSL - Open Software License 3.0](http://opensource.org/licenses/osl-3.0.php)
+
+
+### Local setup v2
+
++ Requirements:
+  1. node.js
+  2. npm
+  ```bash
+  node -v # recommended 22 or above
+  npm -v # recommended 11 or above
+  ```
+  3. packages
++ Install
+  ```bash
+  npm install playwright
+  npx playwright install --with-deps
+  ```
++ Build
+  ```bash
+  node src/scripts/build.mjs
+  ```
++ Serve
+  ```bash
+  npx http-server docs
+  ```
+
+### Validators
+
+```bash
+npx stylelint "src/**/*.{css,scss}"
+htmlhint docs/**/*.html
+```

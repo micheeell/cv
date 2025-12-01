@@ -1,0 +1,21 @@
+/* Hide print-only content by default */
+.only-print { display: none; }
+
+/* Print adjustments */
+@media print {
+  body { color: #000; }
+  .only-print { display: block; }
+  .site-header, .site-footer { border: none; }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* Avoid breaking key blocks */
+  h2, h3, li, p {
+    break-inside: avoid;
+    /* stylelint-disable-next-line property-no-deprecated */
+    page-break-inside: avoid;
+  }
+}

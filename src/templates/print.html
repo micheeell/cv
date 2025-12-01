@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="{{ head.lang }}">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Michael Ayoul - Curriculum Vit&aelig;</title>
+  <link type="text/css" rel="stylesheet" href="/assets/pdf.css" />
+  <link href="https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/sans.css" rel="stylesheet">
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+  <div class="wrapper-top"></div>
+  <div class="wrapper-mid">
+    <a id="top"></a>
+    <!-- Begin Paper -->
+    <div id="paper">
+      <article id="paper-mid">
+        <section class="entry first">
+          <img class="portrait" src="/assets/files/face.jpg" alt="Michael Ayoul" title="Michael Ayoul" />
+
+          <header class="self">
+            <h1 class="name">Michael Ayoul<br />
+              <span>{{ presentation.title }}</span></h1>
+          </header>
+
+          <nav class="info left">
+            <ul>
+              <li class="ad">{{ presentation.address }}</li>
+              <li class="mail"><a href="mailto:michael.ayoul@polytechnique.org">michael.ayoul@polytechnique.org</a></li>
+              <li class="tel print-only">+54 9 11 3148 6078</li>
+            </ul>
+          </nav>
+          <nav class="info right">
+            <ul>
+              <li class="web"><a href="{{ presentation.href }}" target="_blank">{{ presentation.link }}</a></li>
+              <li class="nationality">{{ presentation.nationality }}</li>
+              <li class="family">{{ presentation.civil }}</li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="entry">
+          <h2>{{ goal.title }}</h2>
+          <p>{{ goal.text }}</p>
+        </section>
+
+        <!-- Begin Work XP -->
+        <section class="entry">
+          <header><h1 class="section">{{ work.title }}</h1></header>
+          <article class="content">
+            <nav>
+              <h3>{{ work.valtech.period }}</h3>
+              {{ work.valtech.duration }}
+            </nav>
+            <mark><a href="{{ work.valtech.link }}" target="_blank">{{ work.valtech.company }}</a>, {{ work.valtech.location }}.</mark><br />
+            <span class="details"><em>{{ work.valtech.description }}</em></span>
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ work.lyracons.period }}</h3>
+              {{ work.lyracons.duration }}
+            </nav>
+            <mark><a href="{{ work.lyracons.link }}" target="_blank">{{ work.lyracons.company }}</a>, {{ work.lyracons.location }}.</mark><br />
+            <span class="details"><em>{{ work.lyracons.description }}</em></span>
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ work.w3it.period }}</h3>
+              {{ work.w3it.duration }}
+            </nav>
+            <mark><a href="{{ work.w3it.link }}" target="_blank">{{ work.w3it.company }}</a>, {{ work.w3it.location }}.</mark><br />
+            <span class="details"><em>{{ work.w3it.description }}</em></span>
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ work.edora.period }}</h3>
+              {{ work.edora.duration }}
+            </nav>
+            <mark><a href="{{ work.edora.link }}" target="_blank">{{ work.edora.company }}</a>, {{ work.edora.location }}.</mark>
+            <span class="details"><em>{{ work.edora.description }}</em></span>
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ work.usal.period }}</h3>
+              {{ work.usal.duration }}
+            </nav>
+            <mark><a href="{{ work.usal.link }}" target="_blank">{{ work.usal.company }}</a>, {{ work.usal.location }}.</mark>
+            <span class="details"><em>{{ work.usal.description }}</em></span>
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ work.mermoz.period }}</h3>
+              {{ work.mermoz.duration }}
+            </nav>
+            <mark><a href="{{ work.mermoz.link }}" target="_blank">{{ work.mermoz.company }}</a>,
+              {{ work.mermoz.location }}.</mark>
+            <span class="details"><em>{{ work.mermoz.role }}</em></span>
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ work.todacom.period }}</h3>
+              {{ work.todacom.duration }}
+            </nav>
+            <mark>{{ work.todacom.company }}, {{ work.todacom.location }}.</mark>
+            <span class="details"><em>{{ work.todacom.description }}</em></span>
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ work.paulsab.period }}</h3>
+              {{ work.paulsab.duration }}
+            </nav>
+            <mark><a href="{{ work.paulsab.enac.link }}" target="_blank">{{ work.paulsab.enac.title }}</a> ({{ work.paulsab.enac.company }})
+              &amp; <a href="{{ work.paulsab.link }}" target="_blank">{{ work.paulsab.company }}</a>,
+              {{ work.paulsab.location }}.</mark>
+            <span class="details"><em>{{ work.paulsab.description }}</em></span>
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ work.cpge.period }}</h3>
+              {{ work.cpge.duration }}
+            </nav>
+            <mark><a href="{{ work.cpge.llg.link }}" target="_blank">{{ work.cpge.llg.company }}</a>,
+              Par&iacute;s y <a href="{{ work.cpge.fermat.link }}" target="_blank">{{ work.cpge.fermat.company }}</a>, {{ work.cpge.fermat.location }}.</mark>
+            <span class="details"><em>{{ work.cpge.description }}</em></span>
+          </article>
+        </section>
+        <!-- End Work XP -->
+
+        <!-- Begin {{ sections.education }} -->
+        <section class="entry">
+          <h1 class="section">{{ education.title }}</h1>
+          <article class="content">
+            <nav>
+              <h3>{{ education.phd.period }}</h3>
+            </nav>
+            <main>
+              <strong>{{ education.phd.description }}</strong>
+              (Th&egrave;se),
+              <a href="{{ work.phd.link }}" target="_blank">{{ work.phd.university }}</a>,
+              {{ work.phd.location }}.
+            </main>
+            <!-- details></details -->
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ education.postgrad.period }}</h3>
+            </nav>
+            <main>
+              <strong>{{ education.postgrad.description }}</strong> (D.E.A. &hyphen; Master),
+              {{ work.postgrad.university }}.
+            </main>
+            <span class="details"><em>{{ education.postgrad.honors }}.</em></span>
+          </article>
+          <article class="content">
+            <nav>
+              <h3>{{ education.x.period }}</h3>
+            </nav>
+            <main>
+              {{ education.x.description }}
+              (<a href="{{ education.x.link }}" target="_blank">{{ education.x.institution }}</a>).
+            </main>
+            <span class="details">
+              <ul class="small">
+                {{#each education.x.bullets}}
+                <li>{{ this }}</li>
+                {{/each}}
+              </ul>
+            </span>
+          </article>
+        </section>
+        <!-- End {{ sections.education }} -->
+
+        <!-- Begin IT skills -->
+        <section class="entry">
+          <h1 class="section">{{ skills.title }}</h1>
+          <article class="content">
+            <aside><h3>{{ skills.platforms.subtitle }}</h3></aside>
+            <ul class="skills">
+              {{#each skills.platforms.list}}
+              <li><a href="{{ link }}" target="_blank">{{ label }}</a></li>
+              {{/each}}
+            </ul>
+          </article>
+          <article class="content">
+            <aside><h3>{{ skills.web.subtitle }}</h3></aside>
+            <ul class="skills">
+              {{#each skills.web.list}}
+              <li><a href="{{ link }}" target="_blank" class="label">{{ label }}</a></li>
+              {{/each}}
+            </ul>
+          </article>
+          <article class="content">
+            <aside><h3>{{ skills.programming.subtitle }}</h3></aside>
+            <ul class="skills">
+              {{#each skills.programming.list}}
+              <li><a href="{{ link }}" target="_blank" class="label">{{ label }}</a></li>
+              {{/each}}
+            </ul>
+          </article>
+          <article class="content">
+            <aside><h3>{{ skills.os.subtitle }}</h3></aside>
+            <ul class="skills">
+              <li>Linux</li>
+              <li>Windows</li>
+              <li>Android</li>
+              <li>iOS/MacOS</li>
+            </ul>
+          </article>
+          <article class="content">
+            <aside><h3>{{ skills.tools.subtitle }}</h3></aside>
+            <ul class="skills">
+              {{#each skills.tools.list}}
+              <li><a href="{{ link }}" target="_blank" class="label">{{ label }}</a></li>
+              {{/each}}
+            </ul>
+          </article>
+        </section>
+        <!-- End IT skills -->
+      </article>
+      <div class="clear"></div>
+      <div class="paper-bottom"></div>
+    </div>
+    <!-- End Paper -->
+  </div>
+  <div class="wrapper-bottom"></div>
+</div>
+<!-- End Wrapper -->
+<div id="message"><a href="#top" id="top-link">{{ backToTop }}</a></div>
+</body>
+</html>

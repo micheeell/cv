@@ -1,0 +1,265 @@
+{
+  "head": {
+    "lang": "fr",
+    "description": "Expérience Professionnelle et Formation de Michael AYOUL",
+    "title": "Michael Ayoul — Curriculum Vitæ"
+  },
+  "nav": {
+    "information": {
+      "title": "Données Personnelles",
+      "civil": "État Civil",
+      "goal": "Objectif Professionnel",
+      "edu": "Formation"
+    },
+    "work": "Expérience Professionnelle",
+    "i18n": {
+      "title": "Langues"
+    },
+    "moreText": "Plus",
+    "actions": {
+      "pdf": {
+        "title": "Télécharger .pdf",
+        "alt": "Enregistrer la version pdf",
+        "label": "Télécharger le pdf"
+      },
+      "print": {
+        "title": "Imprimer",
+        "alt": "Imprimer",
+        "label": "Imprimer"
+      },
+      "linkedin": {
+        "link": "https://www.linkedin.com/in/michaelayoul/",
+        "title": "LinkedIn",
+        "alt": "Ma fiche sur linkedin",
+        "label": "Ma fiche sur linkedin"
+      },
+      "github": {
+        "title": "Voir le code sur GitHub",
+        "alt": "Voir le code sur GitHub",
+        "label": "Voir le code sur GitHub"
+      }
+    }
+  },
+  "presentation": {
+    "title": "Analyste Programmeur",
+    "blurb": "High‑performance commerce backends, secure integrations, and scalable architectures.",
+    "address": "Buenos Aires, ARGENTINE",
+    "nationality": "Français",
+    "civil": "Marié, trois enfants",
+    "href": "https://micheeell.github.io/cv/fr/",
+    "link": "micheeell.github.io/cv/fr/"
+  },
+  "goal": {
+    "title": "Objectif Professionnel",
+    "text": "Participer au succès d'une multinationale, en tirant profit à la fois de mon esprit d'analyse et de mes aptitudes pour la communication."
+  },
+  "work": {
+    "title": "Expérience Professionnelle",
+    "valtech": {
+      "company": "Valtech",
+      "link": "https://www.valtech.com/fr-fr/",
+      "period": "Avril 2022 – Aujourd'hui",
+      "duration": "4 ans",
+      "role": "Architecte technique",
+      "location": "Buenos Aires, Argentine",
+      "description": "Mentoring, tutoring, formation, gestion de équipes"
+    },
+    "lyracons": {
+      "company": "Lyracons S.A.",
+      "link": "https://www.lyracons.com/",
+      "period": "Mars 2014 – mars 2022",
+      "duration": "8 ans",
+      "role": "Développeur",
+      "location": "Buenos Aires, Argentine",
+      "description": "Développeur – solutions eCommerce – Modules pour les plateformes de Magento, Wordpress"
+    },
+    "w3it": {
+      "company": "W3IT Solutions",
+      "link": "https://w3itsolutions.net/",
+      "period": "Septembre 2011 – Février 2014",
+      "duration": "3 ans",
+      "role": "Développeur",
+      "location": "Buenos Aires",
+      "description": "Développeur – Sites web en HTML, PHP (orientés à l'eCommerce)…"
+    },
+    "edora": {
+      "company": "Edora System",
+      "link": "https://www.edorasystem.com/",
+      "period": "Juillet 2009 – Août 2011",
+      "duration": "2 ans",
+      "role": "Programmeur",
+      "location": "Buenos Aires",
+      "description": "Développeur IT – Programmation en Java & PHP – Développement d'applications pour smartphone (iPhone, Android)"
+    },
+    "usal": {
+      "company": "USAL",
+      "link": "http://www.usal.edu.ar/",
+      "period": "Septembre 2008 – Décembre 2009",
+      "duration": "2 ans",
+      "role": "Professeur",
+      "location": "Buenos Aires",
+      "description": "Professeur de mathématiques – Responsable du cours «Mathématiques pour l'économiste»."
+    },
+    "mermoz": {
+      "company": "Lycée Jean Mermoz",
+      "link": "http://lyceemermoz.edu.ar/m10/index.php/",
+      "period": "Février 2009 – Juillet 2009",
+      "duration": "1 semestre",
+      "role": "Enseignant",
+      "location": "Buenos Aires",
+      "description": "Professeur de SVT."
+    },
+    "todacom": {
+      "company": "Todacom S.A",
+      "link": "",
+      "period": "Septembre 2008 – Juillet 2009",
+      "duration": "1 an",
+      "role": "Développeur",
+      "location": "Buenos Aires",
+      "description": "Développeur – Programmation en html, JavaScript, VisualBasic…"
+    },
+    "paulsab": {
+      "title": "ATER",
+      "company": "Université Paul Sabatier",
+      "link": "https://www.univ-tlse3.fr/",
+      "enac": {
+        "title": "ENAC",
+        "company": "ENAC",
+        "link": "https://www.enac.fr/fr"
+      },
+      "period": "Septembre 2004 – Août 2008",
+      "duration": "4 ans",
+      "role": "Professeur de Mathématiques",
+      "location": "Toulouse, France",
+      "description": "Professeur de mathématiques fondamentales, probabilités, statistiques…"
+    },
+    "cpge": {
+      "title": "Colleur",
+      "period": "Septembre 2001 – Juillet 2006",
+      "duration": "5 ans",
+      "role": "Examinateur",
+      "llg": {
+        "company": "Lycée Louis‑le‑Grand",
+        "link": "https://www.louislegrand.fr/",
+        "location": "Paris"
+      },
+      "fermat": {
+        "company": "Lycée Pierre de Fermat",
+        "link": "https://fermat.mon-ent-occitanie.fr/",
+        "location": "Toulouse"
+      },
+      "description": "Examinateur en CPGE."
+    }
+  },
+  "education": {
+    "title": "Formation",
+    "phd": {
+      "label": "Doctorat",
+      "period": "2004–2008",
+      "title": "Hamilton",
+      "description": "Préparation d'une thèse en mathématiques pures",
+      "university": "Université Paul Sabatier",
+      "link": "https://www.math.univ-tlse3.fr/",
+      "location": "Toulouse, France"
+    },
+    "postgrad": {
+      "label": "DEA",
+      "period": "2004",
+      "title": "Géométrie de Poisson",
+      "description": "D.E.A., Université Paul Sabatier.",
+      "university": "Université Paul Sabatier",
+      "honors": "Mention honorable"
+    },
+    "x": {
+      "label": "École Polytechnique",
+      "institution": "École Polytechnique",
+      "period": "2000–2005",
+      "title": "Cursus Polytechnicien",
+      "description": "Diplôme d'ingénieur de l'École Polytechnique.",
+      "link": "https://www.polytechnique.edu/",
+      "bullets": [
+        "Licence de Mathématiques et Physique (Master).",
+        "Majeures d'Économie, Mathématiques, Biologie et Physique."
+      ]
+    }
+  },
+  "skills": {
+    "title": "Informatique",
+    "platforms": {
+      "title": "Plateformes",
+      "subtitle": "Plateformes web",
+      "listing": "Liste de Plateformes",
+      "list": [
+        { "label": "Magento", "link": "https://magento.com/" },
+        { "label": "Symfony", "link": "https://symfony.com/" },
+        { "label": "Laravel", "link": "https://laravel.com/" },
+        { "label": "Yii", "link": "https://www.yiiframework.com/" },
+        { "label": "Wordpress", "link": "https://wordpress.org/" },
+        { "label": "Joomla", "link": "https://www.joomla.org/" }
+      ]
+    },
+    "web": {
+      "title": "Langages Web",
+      "subtitle": "Langage web & librairies",
+      "listing": "Liste de Librairies",
+      "list": [
+        { "label": "PHP", "link": "https://www.php.net" },
+        { "label": "html5", "link": "https://html.spec.whatwg.org/multipage/" },
+        { "label": "Node.js", "link": "https://nodejs.org/" },
+        { "label": "React", "link": "https://reactjs.org/" },
+        { "label": "bootstrap", "link": "https://getbootstrap.com/" },
+        { "label": "jQuery", "link": "https://jquery.com/" },
+        { "label": "MySQL", "link": "https://www.mysql.com/" },
+        { "label": "PostgreSQL", "link": "https://www.postgresql.org/" },
+        { "label": "sass", "link": "http://sass-lang.com/" },
+        { "label": "less", "link": "http://lesscss.org/" }
+      ]
+    },
+    "programming": {
+      "title": "Programmation",
+      "subtitle": "Autres langages",
+      "listing": "Liste de Langages",
+      "list": [
+        { "label": "Java", "link": "https://www.oracle.com/java/index.html" },
+        { "label": "actionScript", "link": "https://help.adobe.com/livedocs/specs/actionscript/3/wwhelp/wwhimpl/js/html/wwhelp.htm" },
+        { "label": "flex", "link": "https://www.adobe.com/products/flex.html" },
+        { "label": "Ruby on Rails", "link": "https://rubyonrails.org/" },
+        { "label": "python", "link": "https://www.python.org/" }
+      ]
+    },
+    "os": {
+      "title": "OS",
+      "subtitle": "Systèmes d'Exploitation",
+      "listTitle": "Liste d'OS",
+      "list": [
+        "Linux debian, redhat",
+        "Windows",
+        "Android",
+        "iOS/MacOS"
+      ]
+    },
+    "tools": {
+      "title": "Outils",
+      "subtitle": "Programmes & outils",
+      "listing": "Liste d'outils",
+      "list": [
+        { "label": "nginx", "link": "https://nginx.org/" },
+        { "label": "apache", "link": "https://www.apache.org/" },
+        { "label": "docker", "link": "https://www.docker.com/" },
+        { "label": "vagrant", "link": "https://www.vagrantup.com/" },
+        { "label": "Git", "link": "https://git-scm.com/" },
+        { "label": "svn", "link": "https://subversion.apache.org/" },
+        { "label": "office", "link": "https://www.libreoffice.org/" }
+      ]
+    }
+  },
+  "and": "et",
+  "backToTop": "Haut de page",
+  "sections": {
+    "highlights": "Points clés",
+    "experience": "Expérience",
+    "education": "Formation",
+    "skills": "Tech"
+  },
+  "highlights": "Modernized enterprise Magento backends; page gen time down ~30%. Message‑driven integrations (payments, tax, OMS/ERP); incidents reduced >50%. CI/CD, blue‑green deploys, observability; MTTR improved ~40%. Secure data flows (tokenization, rate limits, 2FA); zero PII leaks since rollout."
+}

@@ -1,0 +1,43 @@
+name: Build & Deploy CV
+
+on:
+  push:
+    branches: [ gh-pages ]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Install dependencies
+        run: npm ci || npm i
+
+      - name: Build static i18n site
+        run: node src/scripts/build.mjs
+
+      # HTML validation using W3C Nu Validator
+      - name: Validate HTML
+        run: |
+          for f in docs/**/index.html; do
+            curl -s -F out=json -F file=@$f https://validator.w3.org/nu/ | jq '.messages | length' ;
+          done
+        # W3C Markup Validation Service (Nu) documentation [6](https://validator.w3.org/)
+
+      # CSS validation using W3C CSS Validator
+      - name: Validate CSS
+        run: |
+          curl -s -F output=json -F text="@docs/assets/main.css" https://jigsaw.w3.org/css-validator/validator
+          curl -s -F output=json -F text="@docs/assets/print.css" https://jigsaw.w3.org/css-validator/validator
+        # W3C CSS Validation Service [7](https://jigsaw.w3.org/css-validator/)
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs

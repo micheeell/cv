@@ -1,0 +1,34 @@
+name: Generate PDFs
+
+on:
+  push:
+    branches: [ gh-pages ]
+  workflow_dispatch:
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Install dependencies
+        run: npm ci || npm i
+
+      - name: Build site
+        run: node src/scripts/build.mjs
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Render PDFs
+        run: node src/scripts/pdf.mjs
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdfs
+          path: pdf/
