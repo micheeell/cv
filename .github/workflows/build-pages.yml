@@ -1,4 +1,4 @@
-name: Build & Deploy CV
+name: Build & Deploy GitHub page
 
 on:
   push:
@@ -9,22 +9,31 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Disable Jekyll for Pages
-        run: touch docs/.nojekyll
+      # 1) Get the repo
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
+      # 2) Setup Node
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
 
+      # 3) Install deps
       - name: Install dependencies
         run: npm ci || npm i
 
+      # 4) Build the site -> this creates docs/
       - name: Build static i18n site
         run: node src/scripts/build.mjs
 
-      # HTML validation using W3C Nu Validator
+      # 5) Disable Jekyll inside the served folder
+      #    Because the site will be served from gh-pages/docs/,
+      #    add .nojekyll to docs/ before deploying.
+      - name: Disable Jekyll for Pages
+        run: touch docs/.nojekyll
+
+      # 6.1) HTML validation using W3C Nu Validator
       - name: Validate HTML
         run: |
           for f in docs/**/index.html; do
@@ -32,13 +41,14 @@ jobs:
           done
         # W3C Markup Validation Service (Nu) documentation [6](https://validator.w3.org/)
 
-      # CSS validation using W3C CSS Validator
+      # 6.2) CSS validation using W3C CSS Validator
       - name: Validate CSS
         run: |
           curl -s -F output=json -F text="@docs/assets/main.css" https://jigsaw.w3.org/css-validator/validator
           curl -s -F output=json -F text="@docs/assets/print.css" https://jigsaw.w3.org/css-validator/validator
         # W3C CSS Validation Service [7](https://jigsaw.w3.org/css-validator/)
 
+      # 7) Deploy to gh-pages under the "docs" subdirectory
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
