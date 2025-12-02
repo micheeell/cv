@@ -297,7 +297,7 @@
     "os": {
       "title": "OS",
       "subtitle": "Operating Systems",
-      "listTitle": "OS List",
+      "listing": "OS List",
       "list": [
         "Linux debian, redhat",
         "Windows",

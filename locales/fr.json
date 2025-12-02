@@ -230,7 +230,7 @@
     "os": {
       "title": "OS",
       "subtitle": "Systèmes d'Exploitation",
-      "listTitle": "Liste d'OS",
+      "listing": "Liste d'OS",
       "list": [
         "Linux debian, redhat",
         "Windows",

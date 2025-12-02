@@ -1,1 +1,19 @@
-{ "tagname-lowercase": true, "attr-lowercase": true, "doctype-first": true, "id-unique": true, "src-not-empty": true }
+{
+  "tagname-lowercase": true,
+  "alt-require": true,
+  "attr-lowercase": true,
+  "attr-no-duplication": true,
+  "attr-unsafe-chars": true,
+  "attr-value-double-quotes": true,
+  "head-script-disabled": true,
+  "inline-style-disabled": false,
+  // the following rule will make onclick="window.print()" raise an error
+  //"inline-script-disabled": true, // uncomment this rule to check onclick="window.print()" is the only inline script
+  "doctype-first": true,
+  "id-unique": true,
+  "spec-char-escape": true,
+  "src-not-empty": true,
+  "style-disabled": true,
+  "tag-pair": true,
+  "title-require": true
+}
