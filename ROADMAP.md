@@ -13,14 +13,23 @@
     + Top 3 achievements with measurable impact (performance, cost, reliability, delivery)?
     + Primary stack (Node/TypeScript, Java, Python; cloud provider; messaging; DBs)?
     + Preferred contact (keep phone only in PDFs?).
-+ [ ] Add external references
-        + to cvplaza.com / jobseeker.com
-        + [developer....ozilla.org], [w3.org]
-        + [validator.w3.org], [jigsaw.w3.org], [webaim.org]
-        + [schema.org]
-        + puppeteer (print pdf) [pptr.dev], [blog.risingstack.com]
+    + [ ] Add external references
+        + [ ] to [cvplaza.com](https://www.cvplaza.com/cv-basics/write-a-cv-in-9-simple-steps/)
+        + [ ] [jobseeker.com](https://www.jobseeker.com/en/cv/articles/cv-english)
+        + [ ] [developer.mozilla.org](https://developer.mozilla.org/en-US/)
+        + [ ] [w3.org](https://www.w3.org/)
+        + [ ] [validator.w3.org](https://validator.w3.org/)
+        + [ ] [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)
+        + [ ] [webaim.org](https://webaim.org/)
+        + [ ] [schema.org](https://validator.schema.org/)
+        + [ ] puppeteer (print pdf) [pptr.dev](https://pptr.dev/guides/what-is-puppeteer) /  [blog.risingstack.com](https://blog.risingstack.com/pdf-from-html-node-js-puppeteer/)
+        + [ ] list own sites / portfolio / gallery
+        + [ ] link to [polytechnique profile](https://ax.polytechnique.org/person/michael-ayoul/40834)
++ [ ] Run linkchecker: fix dead links
+    + Replace Magento > AdobeCommerce
 + [ ] Add JSON‑LD Person for discoverability (name, jobTitle, email, sameAs). [schema.org]
 + [ ] contact form
+    + Maybe using [formspree.io](formspree.io)
 + [ ] Link "Request full CV"
       + If you're interested by my profile, please don't hesitate to contact me to ask for the full version with unpublished sensitive data such as address, phone, unobfuscated email or DNI (date of birth, national ID, full street address, phone number).
 + [ ] script to add sensitive information from sensitive.json (not versioned)
@@ -28,23 +37,15 @@
     + [ ] protect main branch
     + [ ] make gh-pages only commitable from build action
     + [ ] debug pipelines / Check GitHub action
-+ [ ] Run linkchecker: fix dead links
-      + Replace Magento > AdobeCommerce
-+ [ ] make print result as close as possible to pdf from print.html
 + [ ] Actualiser le readme (link to cv plaza..etc.)
-+ [ ] Indicate in CHANGELOG Multilingual refactor (English, Spanish, French) without duplicating templates
-+ [ ] links other sites (book)
-+ [ ] Add book de mes sites perso?
-+ [ ] dark mode
-
-Required (content)
-
-Required (git)
-
-nice-to-have
++ [ ] Create CHANGELOG Multilingual refactor (English, Spanish, French) without duplicating templates
++ [ ] refactor styles & CSS files
+    + [ ] make print result as close as possible to pdf from print.html
+    + [ ] Add dark mode
+    + [ ] redraw flag icons with colored [svg](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 
 
-### Content shape:
+### Reshape Content:
 
 #### Summary (3–4 lines)
 
@@ -107,75 +108,80 @@ await browser.close();
 
 
 
-BFF
-EDS
-AEM
-ACCS
-Shopify
-composable
-AdobeCommerce
-CI/CD
-BI
-VPN / GlobalProtect
-API Rest / GraphQL / Mesh
-Authentication ID provider 
-AWS lambda function
-netlify
-cdn cloudflare
-DNS
-
-kubernetes
-debugbear
-newrelic
-datadog
-atlassian
-AI
-
-
-Share those, and I’ll draft updated English/Spanish/French content and (if you want) provide a PR‑ready branch layout + workflow file.
-If you prefer, I can also sanitise the uploaded print.html and produce a new standards‑compliant version with the sensitive fields removed and the modern sections added.
++ <abbr title="Backend For Frontend">BFF</abbr>
++ <abbr title="Adobe Experience Manager">AEM</abbr>
++ <abbr title="Adobe Commerce as a Cloud Service">ACCS</abbr>
++ Shopify
++ composable
++ AdobeCommerce
++ <abbr title="Continuous Integration / Continuous Development">CI/CD</abbr>
++ <abbr title="Business Intelligence">BI</abbr>
++ <abbr title="Virtual Private Network">VPN</abbr>
++ API Rest / GraphQL / Mesh
++ Authentication ID provider
+    + <abbr title="Single Sign-On">SSO</abbr>
+    + <abbr title="Identity Provider">IdP</abbr>
+    + <abbr title="Service Provider">SP</abbr> (SAML/OAuth context)
+    + <abbr title="Identity and Access Management">IAM</abbr>
+    + <abbr title="Multi-Factor Authentication">MFA</abbr>
+    + <abbr title="Two-Factor Authentication">2FA</abbr>
+    + <abbr title="OpenID Connect">OIDC</abbr>
+    + <abbr title="Open Authorization">OAuth</abbr>
+    + <abbr title="JSON Web Token">JWT</abbr>
+    + <abbr title="Security Assertion Markup Language">SAML</abbr>
+    + <abbr title="Security Token Service">STS</abbr>
+    + <abbr title="Access Control List">ACL</abbr>
+    + <abbr title="System for Cross-domain Identity Management">SCIM</abbr>
++ <abbr title="Content Delivery Network">cdn</abbr> / cloudflare
++ <abbr title="Domain Name System">DNS</abbr>
++ AWS Services: S3, lambda functions..etc.
++ netlify
++ kubernetes
++ debugbear
++ newrelic
++ datadog
++ metabase
++ forest admin
++ ngrok
++ atlassian tools
++ AI tools
 
 
 + [ ] ✅ Sanitization Goals
-    + Remove age, date of birth, DNI, full address, phone number.
-    + Remove Twitter link.
-    + Keep email, LinkedIn, GitHub, city/country.
+    + Create a full CV with sensitive data (not versioned in git) including DNI, full address, phone number (date of birth?).
+    + Obfuscate email.
     + Ensure semantic structure and responsive design.
-    + Prepare for multilingual integration (later step).
 
 + [ ] ✅ Current Issues in index.html
-    + Sensitive data:
-      + Bustamante 119, LANÚS OESTE Prov. de Buenos Aires, ARGENTINA 
-      + +54 9 11 3148 6078 
-      + 40 años (nacido el 26 de febrero 1980)
-      + DNI: 94.249.530 
-    + Outdated links: Twitter. 
-    + Navigation includes redundant links (desktop version, print, PDF). 
     + No responsive meta tags or modern layout classes. 
     + Uses inline navigation with anchors instead of semantic <nav>.
 
 
-+ [ ] ✅ Next Step 
-  + I’ll create a sanitized, responsive HTML template based on your file:
-
-Keep header, sections, content but remove sensitive info.
-Add responsive meta tag and basic CSS classes.
-Keep Spanish text for now (we’ll later factor multilingual).
-Add placeholders for language switch and PDF download.
-Remove Twitter and unnecessary links.
-
-
 ✅ Folder Structure for Migration
 ```
-cv/
-├── index.html            # Responsive template (base)
+docs/
+├── index.html          # CV in Spanish (default)
+├── en/
+│   └── index.html      # CV in English
+├── fr/
+│   └── index.html      # CV in French
 ├── assets/
 │   ├── css/
-│   │   ├── styles.css    # Screen styles
-│   │   └── print.css     # Print styles
-│   ├── js/
-│   │   └── i18n.js       # Language switch logic
-│   └── pdf/              # Generated PDFs
+│   │   ├── icons/
+│   │   ├── styles.css  # Screen styles
+│   │   └── print.css   # Print styles
+│   └── pdf/            # Generated PDFs
+cv/
+├── src/
+│   ├── scripts/
+│   │   ├── build.mjs
+│   │   └── pdf.mjs
+│   ├── styles/
+│   │   ├── styles.css
+│   │   └── print.css
+│   └── templates/
+│       ├── index.html
+│       └── print.html
 ├── locales/
 │   ├── en.json
 │   ├── es.json
@@ -191,14 +197,3 @@ cv/
 Validate HTML/CSS (W3C).
 Generate PDFs via Puppeteer for each language.
 Deploy to gh-pages.
-
-
-Now, I’ll sanitize and refactor your index.html into a responsive template.
-Do you want:
-
-Minimal CSS inline for now (just to make it responsive)?
-Or link to external CSS file (we’ll create styles.css next)?
-
-Once you confirm, I’ll produce the new HTML file and share it here.
-👉 Which option do you prefer for this first step?
-Inline minimal CSS or external CSS file setup?

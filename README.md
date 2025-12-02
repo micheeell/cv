@@ -27,8 +27,8 @@ Welcome to the github repository for my résumé.
 - Comments welcome.
 
 ## Facts ##
-<a name="facts"></a>
-- version: [2018](https://github.com/micheeell/cv/tree/v2018)
+
+- version: [2025](https://github.com/micheeell/cv/blob/gh-pages/) (Work in progress)
 - available languages:<br>
     - ![bandera argentina](./files/flag_ar.png) castellano,<br>
     - ![English flag](./files/flag_en.png) English,<br>
@@ -37,17 +37,12 @@ Welcome to the github repository for my résumé.
 
 ## Author ##
 
-[@micheeell](https://twitter.com/micheeell)
-
-[@mayoul26](https://twitter.com/mayoul26)
+[@micheeell](https://github.com/micheeell)
 
 ## to-do ##
 
-- add contact form using [formspree.io](formspree.io)
-- refactor styles & CSS files
-- redraw icons with [svg](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
-- add portfolio / gallery
-- add link to [polytechnique profile](https://ax.polytechnique.org/person/michael-ayoul/40834)
+- [ ] complete [ROADMAP.md](./ROADMAP.md)
+- [ ] delete ROADMAP.md
 
 
 ## Usage ##
@@ -56,12 +51,12 @@ Welcome to the github repository for my résumé.
 git clone git@github.com:micheeell/cv.git
 cd cv/
 ```
-Or more simply: `wget https://micheeell.github.io/files/resume-ayoul-2020.pdf`<br>
+Or more simply: `wget https://micheeell.github.io/assets/files/pdf/CV-ayoul-en.pdf`<br>
 **Note:** please update download url for another language.
 
 ## Contribution ##
 
-Any contribution, comment or credit is highly appreciated. The best way to contribute code is to open a [pull request on Github](https://help.github.com/articles/using-pull-requests).
+Any contribution, comment or credit is highly appreciated. The best way to contribute code is to [open a pull request](https://github.com/micheeell/cv/pulls) on [Github](https://help.github.com/articles/using-pull-requests).
 
 
 ## Validators ##
@@ -105,7 +100,8 @@ cpanm CSS::DOM
 #### Link Checker usage ####
 
 ```bash
-checklink resume.html
+checklink --follow-file-links docs/index.html
+checklink --follow-file-links docs/print.html
 ```
 
 
@@ -131,11 +127,15 @@ checklink resume.html
 + Build
   ```bash
   node src/scripts/build.mjs
+  node src/scripts/pdf.mjs
   ```
 + Serve
   ```bash
+  ln -s docs docs/cv
+  cd docs && ln -s ../docs cv && cd ..
   npx http-server docs
   ```
++ Visit url [http://localhost:8080/cv/](http://127.0.0.1:8080/cv/)
 
 ### Validators
 
