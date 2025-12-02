@@ -1,5 +1,5 @@
-+ [x] Check GitHub page docs/ folder as root
-+ [ ] remove index.html from root
++ [x] ~~Check GitHub page has `docs/` folder as root~~
++ [x] ~~remove index.html from root~~
 + [ ] Fix pdf des sections en fr+en qui se coupent entre deux pages
     + break-inside: avoid, orphans, widows
 + [ ] Fix pdf fr du titre en overflow
@@ -8,10 +8,10 @@
     + [ ] Ajouter CI/CD
     + [ ] Formation / R&D / standards
     + [ ] Content shape
-    + Content modernization (tailored to your current role) crisp, modern phrasing
+    + Content modernization (tailored to current role) crisp, modern phrasing
     + Current role (title, company, dates) - current title (Commerce Backend Technical Architect)
     + Top 3 achievements with measurable impact (performance, cost, reliability, delivery)?
-    + Primary stack (Node/TypeScript, Java, Python; cloud provider; messaging; DBs)?
+    + Primary stack (Node/TypeScript, Java, Python; cloud provider; messaging; DBs)
     + Preferred contact (keep phone only in PDFs?).
     + [ ] Add external references
         + [ ] to [cvplaza.com](https://www.cvplaza.com/cv-basics/write-a-cv-in-9-simple-steps/)
@@ -25,19 +25,63 @@
         + [ ] puppeteer (print pdf) [pptr.dev](https://pptr.dev/guides/what-is-puppeteer) /  [blog.risingstack.com](https://blog.risingstack.com/pdf-from-html-node-js-puppeteer/)
         + [ ] list own sites / portfolio / gallery
         + [ ] link to [polytechnique profile](https://ax.polytechnique.org/person/michael-ayoul/40834)
-+ [ ] Run linkchecker: fix dead links
-    + Replace Magento > AdobeCommerce
+        + [ ] Run linkchecker: fix dead links
+          + Replace Magento > AdobeCommerce
+        + <abbr title="Backend For Frontend">BFF</abbr>
+        + <abbr title="Adobe Experience Manager">AEM</abbr>
+        + <abbr title="Adobe Commerce as a Cloud Service">ACCS</abbr>
+        + Shopify
+        + composable
+        + Analytics (google, adobe)
+        + <abbr title="Continuous Integration / Continuous Development">CI/CD</abbr>
+        + <abbr title="Business Intelligence">BI</abbr>
+        + <abbr title="Virtual Private Network">VPN</abbr>
+        + API Rest / GraphQL / Mesh
+        + Authentication ID provider
+            + <abbr title="Single Sign-On">SSO</abbr>
+            + <abbr title="Identity Provider">IdP</abbr>
+            + <abbr title="Service Provider">SP</abbr> (SAML/OAuth context)
+            + <abbr title="Identity and Access Management">IAM</abbr>
+            + <abbr title="Multi-Factor Authentication">MFA</abbr>
+            + <abbr title="Two-Factor Authentication">2FA</abbr>
+            + <abbr title="OpenID Connect">OIDC</abbr>
+            + <abbr title="Open Authorization">OAuth</abbr>
+            + <abbr title="JSON Web Token">JWT</abbr>
+            + <abbr title="Security Assertion Markup Language">SAML</abbr>
+            + <abbr title="Security Token Service">STS</abbr>
+            + <abbr title="Access Control List">ACL</abbr>
+            + <abbr title="System for Cross-domain Identity Management">SCIM</abbr>
+        + <abbr title="Content Delivery Network">cdn</abbr> / cloudflare
+        + <abbr title="Domain Name System">DNS</abbr>
+        + AWS Services: S3, lambda functions..etc.
+        + AI tools
+        + Galoisian obstructions to non-Hamiltonian integrability
+
+| Platform            | Description                                                   | URL                                                                           |
+|---------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **Netlify**         | Modern web deployment platform with serverless functions and global CDN. | https://www.netlify.com/                                                      |
+| **Kubernetes**      | Open-source system for automating deployment, scaling, and management of containerized apps. | https://kubernetes.io/                                                        |
+| **DebugBear**       | Web performance monitoring and Core Web Vitals tracking for developers. | https://www.debugbear.com/                                            |
+| **New Relic**       | Full-stack observability platform for applications and infrastructure. | https://newrelic.com/platform                                                 |
+| **Datadog**         | Monitoring, security, and analytics platform for cloud applications. | https://www.datadoghq.com/                                            |
+| **Metabase**        | Open-source business intelligence and data visualization tool. | https://www.metabase.com/learn/metabase-basics/overview/ |
+| **Forest Admin**    | Secure back-office and admin panel solution for your applications. | https://www.forestadmin.com/      |
+| **Ngrok**           | Secure tunneling and API gateway platform for exposing local services. | https://ngrok.com/                                                            |
+| **Atlassian Tools** | Collaboration and productivity tools like Jira, Confluence, and Bitbucket. | https://www.atlassian.com/                                                    |
 + [ ] Add JSON‑LD Person for discoverability (name, jobTitle, email, sameAs). [schema.org]
 + [ ] contact form
     + Maybe using [formspree.io](formspree.io)
 + [ ] Link "Request full CV"
       + If you're interested by my profile, please don't hesitate to contact me to ask for the full version with unpublished sensitive data such as address, phone, unobfuscated email or DNI (date of birth, national ID, full street address, phone number).
-+ [ ] script to add sensitive information from sensitive.json (not versioned)
++ [ ] Write a script that would build a full CV (html then pdf) with sensitive information (from sensitive.json - not versioned)
 + [ ] GIT
     + [ ] protect main branch
     + [ ] make gh-pages only commitable from build action
     + [ ] debug pipelines / Check GitHub action
-+ [ ] Actualiser le readme (link to cv plaza..etc.)
+    + [ ] move print.html from docs/ to dist/ to generate the pdf
+    + [ ] rename main.css to styles.css
+    + [ ] merge print.css & pdf.css to one css file
++ [ ] Clean README.md (link to cv plaza..etc.)
 + [ ] Create CHANGELOG Multilingual refactor (English, Spanish, French) without duplicating templates
 + [ ] refactor styles & CSS files
     + [ ] make print result as close as possible to pdf from print.html
@@ -104,47 +148,6 @@ await page.pdf({  path: out,  format: 'A4',  printBackground: true,  margin: { t
 await browser.close();
 ```
 
-
-
-
-
-+ <abbr title="Backend For Frontend">BFF</abbr>
-+ <abbr title="Adobe Experience Manager">AEM</abbr>
-+ <abbr title="Adobe Commerce as a Cloud Service">ACCS</abbr>
-+ Shopify
-+ composable
-+ AdobeCommerce
-+ <abbr title="Continuous Integration / Continuous Development">CI/CD</abbr>
-+ <abbr title="Business Intelligence">BI</abbr>
-+ <abbr title="Virtual Private Network">VPN</abbr>
-+ API Rest / GraphQL / Mesh
-+ Authentication ID provider
-    + <abbr title="Single Sign-On">SSO</abbr>
-    + <abbr title="Identity Provider">IdP</abbr>
-    + <abbr title="Service Provider">SP</abbr> (SAML/OAuth context)
-    + <abbr title="Identity and Access Management">IAM</abbr>
-    + <abbr title="Multi-Factor Authentication">MFA</abbr>
-    + <abbr title="Two-Factor Authentication">2FA</abbr>
-    + <abbr title="OpenID Connect">OIDC</abbr>
-    + <abbr title="Open Authorization">OAuth</abbr>
-    + <abbr title="JSON Web Token">JWT</abbr>
-    + <abbr title="Security Assertion Markup Language">SAML</abbr>
-    + <abbr title="Security Token Service">STS</abbr>
-    + <abbr title="Access Control List">ACL</abbr>
-    + <abbr title="System for Cross-domain Identity Management">SCIM</abbr>
-+ <abbr title="Content Delivery Network">cdn</abbr> / cloudflare
-+ <abbr title="Domain Name System">DNS</abbr>
-+ AWS Services: S3, lambda functions..etc.
-+ netlify
-+ kubernetes
-+ debugbear
-+ newrelic
-+ datadog
-+ metabase
-+ forest admin
-+ ngrok
-+ atlassian tools
-+ AI tools
 
 
 + [ ] ✅ Sanitization Goals
