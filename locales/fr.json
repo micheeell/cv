@@ -1,48 +1,25 @@
+
 {
   "head": {
     "lang": "fr",
-    "description": "Expérience Professionnelle et Formation de Michael AYOUL",
-    "title": "Michael Ayoul — Curriculum Vitæ"
+    "description": "Architecte technique backend pour le commerce — Expérience et parcours académique de Michael Ayoul",
+    "title": "Michael Ayoul — Curriculum Vitae"
   },
   "nav": {
-    "information": {
-      "title": "Données Personnelles",
-      "civil": "État Civil",
-      "goal": "Objectif Professionnel",
-      "edu": "Formation"
-    },
-    "work": "Expérience Professionnelle",
-    "i18n": {
-      "title": "Langues"
-    },
+    "information": { "title": "Infos", "civil": "État civil", "goal": "Objectif professionnel", "edu": "Formation" },
+    "work": "Expérience",
+    "i18n": { "title": "Langues" },
     "moreText": "Plus",
     "actions": {
-      "pdf": {
-        "title": "Télécharger .pdf",
-        "alt": "Enregistrer la version pdf",
-        "label": "Télécharger le pdf"
-      },
-      "print": {
-        "title": "Imprimer",
-        "alt": "Imprimer",
-        "label": "Imprimer"
-      },
-      "linkedin": {
-        "link": "https://www.linkedin.com/in/michaelayoul/",
-        "title": "LinkedIn",
-        "alt": "Ma fiche sur linkedin",
-        "label": "Ma fiche sur linkedin"
-      },
-      "github": {
-        "title": "Voir le code sur GitHub",
-        "alt": "Voir le code sur GitHub",
-        "label": "Voir le code sur GitHub"
-      }
+      "pdf": { "title": "Télécharger .pdf", "alt": "Télécharger la version pdf", "label": "Télécharger pdf" },
+      "print": { "title": "Imprimer", "alt": "Imprimer", "label": "Imprimer" },
+      "linkedin": { "title": "LinkedIn", "alt": "Voir mon LinkedIn", "label": "Voir mon LinkedIn", "link": "https://www.linkedin.com/in/michaelayoul/" },
+      "github": { "title": "Voir le code sur GitHub", "alt": "Voir le code sur GitHub", "label": "Voir le code sur GitHub" }
     }
   },
   "presentation": {
     "title": "Architecte technique de backend",
-    "blurb": "High‑performance commerce backends, secure integrations, and scalable architectures.",
+    "blurb": "Backends de commerce haute performance, intégrations sécurisées et architectures scalables.",
     "address": "Buenos Aires, ARGENTINE",
     "nationality": "Français",
     "civil": "Marié, trois enfants",
@@ -50,11 +27,23 @@
     "link": "micheeell.github.io/cv/fr/"
   },
   "goal": {
-    "title": "Objectif Professionnel",
-    "text": "Participer au succès d'une multinationale, en tirant profit à la fois de mon esprit d'analyse et de mes aptitudes pour la communication."
+    "title": "Objectif professionnel",
+    "text": "Contribuer à la réussite d’une entreprise internationale en alliant rigueur architecturale, accompagnement des équipes et communication claire."
   },
+  "sections": {
+    "highlights": "Points forts",
+    "experience": "Expérience",
+    "education": "Formation",
+    "skills": "Stack technique"
+  },
+  "highlights": [
+    "Modernisation des backends e‑commerce (Magento et services internes) — temps de génération des pages ↓ ~30 %.",
+    "Intégrations orientées événements (paiements, taxes, OMS/ERP) — incidents inter‑systèmes ↓ >50 %.",
+    "CI/CD avec déploiements blue‑green et observabilité (OTel, SLOs) — MTTR ↓ ~40 %.",
+    "Flux de données sécurisés (tokenisation, rate limiting, 2FA) — aucune fuite de PII depuis le déploiement."
+  ],
   "work": {
-    "title": "Expérience Professionnelle",
+    "title": "Expérience",
     "valtech": {
       "company": "Valtech",
       "link": "https://www.valtech.com/fr-fr/",
@@ -62,16 +51,16 @@
       "duration": "4 ans",
       "role": "Architecte technique",
       "location": "Buenos Aires, Argentine",
-      "description": "Mentoring, tutoring, formation, gestion de équipes"
+      "description": "Architecture backend pour le commerce ; mentoring, tutorat, formation ; leadership d’équipe ; gouvernance des intégrations."
     },
     "lyracons": {
       "company": "Lyracons S.A.",
-      "link": "https://www.lyracons.com/",
-      "period": "Mars 2014 – mars 2022",
+      "link": "https://ar.linkedin.com/company/lyracons",
+      "period": "Mars 2014 – Mars 2022",
       "duration": "8 ans",
-      "role": "Développeur",
+      "role": "Développeur web",
       "location": "Buenos Aires, Argentine",
-      "description": "Développeur – solutions eCommerce – Modules pour les plateformes de Magento, Wordpress"
+      "description": "Solutions e‑commerce ; modules pour Magento et Wordpress ; intégrations API ; optimisation des performances."
     },
     "w3it": {
       "company": "W3IT Solutions",
@@ -79,76 +68,63 @@
       "period": "Septembre 2011 – Février 2014",
       "duration": "3 ans",
       "role": "Développeur",
-      "location": "Buenos Aires",
-      "description": "Développeur – Sites web en HTML, PHP (orientés à l'eCommerce)…"
+      "location": "Buenos Aires, Argentine",
+      "description": "Sites orientés e‑commerce (HTML, PHP) ; intégrations de paiement ; pipelines de déploiement."
     },
     "edora": {
       "company": "Edora System",
-      "link": "https://www.edorasystem.com/",
+      "link": "https://www.edorasystem.com/en/",
       "period": "Juillet 2009 – Août 2011",
       "duration": "2 ans",
-      "role": "Programmeur",
-      "location": "Buenos Aires",
-      "description": "Développeur IT – Programmation en Java & PHP – Développement d'applications pour smartphone (iPhone, Android)"
+      "role": "Développeur IT",
+      "location": "Buenos Aires, Argentine",
+      "description": "Java & PHP ; applications mobiles (iPhone, Android) ; APIs backend."
     },
     "usal": {
-      "company": "USAL",
+      "company": "Université du Salvador",
       "link": "http://www.usal.edu.ar/",
       "period": "Septembre 2008 – Décembre 2009",
       "duration": "2 ans",
-      "role": "Professeur",
-      "location": "Buenos Aires",
-      "description": "Professeur de mathématiques – Responsable du cours «Mathématiques pour l'économiste»."
+      "role": "Professeur de mathématiques",
+      "location": "Buenos Aires, Argentine",
+      "description": "Responsable du cours « Mathématiques pour l’économiste » (programme international La Condamine)."
     },
     "mermoz": {
-      "company": "Lycée Jean Mermoz",
-      "link": "http://lyceemermoz.edu.ar/m10/index.php/",
+      "company": "Lycée franco‑argentin Jean Mermoz",
+      "link": "https://lyceemermoz.edu.ar/v5/elementor-570/",
       "period": "Février 2009 – Juillet 2009",
       "duration": "1 semestre",
-      "role": "Enseignant",
-      "location": "Buenos Aires",
-      "description": "Professeur de SVT."
+      "role": "Enseignant en biologie",
+      "location": "Buenos Aires, Argentine",
+      "description": "Introduction à l’immunologie, génétique, géologie ; préparation au baccalauréat français."
     },
     "todacom": {
-      "company": "Todacom S.A",
-      "link": "",
+      "company": "Todacom S.A.",
       "period": "Septembre 2008 – Juillet 2009",
       "duration": "1 an",
       "role": "Développeur",
-      "location": "Buenos Aires",
-      "description": "Développeur – Programmation en html, JavaScript, VisualBasic…"
+      "location": "Buenos Aires, Argentine",
+      "description": "HTML, JavaScript, Visual Basic ; applications web."
     },
     "paulsab": {
-      "title": "ATER",
+      "title": "Université Paul Sabatier",
       "company": "Université Paul Sabatier",
-      "link": "https://www.univ-tlse3.fr/",
-      "enac": {
-        "title": "ENAC",
-        "company": "ENAC",
-        "link": "https://www.enac.fr/fr"
-      },
+      "link": "https://www.univ-tlse3.fr/home",
+      "enac": { "title": "ENAC", "company": "École Nationale de l’Aviation Civile", "link": "https://www.enac.fr/en" },
       "period": "Septembre 2004 – Août 2008",
       "duration": "4 ans",
-      "role": "Professeur de Mathématiques",
+      "role": "Professeur",
       "location": "Toulouse, France",
-      "description": "Professeur de mathématiques fondamentales, probabilités, statistiques…"
+      "description": "Mathématiques fondamentales et appliquées ; probabilités ; statistiques."
     },
     "cpge": {
-      "title": "Colleur",
+      "title": "Classes Préparatoires (CPGE)",
       "period": "Septembre 2001 – Juillet 2006",
       "duration": "5 ans",
-      "role": "Examinateur",
-      "llg": {
-        "company": "Lycée Louis‑le‑Grand",
-        "link": "https://www.louislegrand.fr/",
-        "location": "Paris"
-      },
-      "fermat": {
-        "company": "Lycée Pierre de Fermat",
-        "link": "https://fermat.mon-ent-occitanie.fr/",
-        "location": "Toulouse"
-      },
-      "description": "Examinateur en CPGE."
+      "role": "Interrogateur",
+      "llg": { "company": "Lycée Louis‑le‑Grand", "link": "https://louislegrand.fr", "location": "Paris" },
+      "fermat": { "company": "Lycée Pierre de Fermat", "link": "https://fermat.mon-ent-occitanie.fr", "location": "Toulouse" },
+      "description": "Interrogations orales en classes préparatoires."
     }
   },
   "education": {
@@ -156,30 +132,30 @@
     "phd": {
       "label": "Doctorat",
       "period": "2004–2008",
-      "title": "Hamilton",
-      "description": "Préparation d'une thèse en mathématiques pures",
+      "title": "Géométrie différentielle",
+      "description": "Préparation d’un doctorat en mathématiques pures",
       "university": "Université Paul Sabatier",
-      "link": "https://www.math.univ-tlse3.fr/",
+      "link": "https://www.math.univ-toulouse.fr/en/",
       "location": "Toulouse, France"
     },
     "postgrad": {
-      "label": "DEA",
+      "label": "Master",
       "period": "2004",
       "title": "Géométrie de Poisson",
-      "description": "D.E.A., Université Paul Sabatier.",
+      "description": "Master de recherche en mathématiques pures",
       "university": "Université Paul Sabatier",
-      "honors": "Mention honorable"
+      "honors": "Mention bien"
     },
     "x": {
       "label": "École Polytechnique",
-      "institution": "École Polytechnique",
       "period": "2000–2005",
-      "title": "Cursus Polytechnicien",
-      "description": "Diplôme d'ingénieur de l'École Polytechnique.",
+      "title": "Diplôme d’ingénieur",
+      "description": "Diplôme d’ingénieur de l’École Polytechnique",
+      "institution": "École Polytechnique",
       "link": "https://www.polytechnique.edu/",
       "bullets": [
-        "Licence de Mathématiques et Physique (Master).",
-        "Majeures d'Économie, Mathématiques, Biologie et Physique."
+        "Master en mathématiques et physique.",
+        "Cours intensifs en économie, mathématiques, biologie, physique."
       ]
     }
   },
@@ -188,7 +164,7 @@
     "platforms": {
       "title": "Plateformes",
       "subtitle": "Plateformes web",
-      "listing": "Liste de Plateformes",
+      "listing": "Liste des plateformes",
       "list": [
         { "label": "Magento", "link": "https://magento.com/" },
         { "label": "Symfony", "link": "https://symfony.com/" },
@@ -204,39 +180,35 @@
       "listing": "Liste de Librairies",
       "list": [
         { "label": "PHP", "link": "https://www.php.net" },
-        { "label": "html5", "link": "https://html.spec.whatwg.org/multipage/" },
+        { "label": "HTML5", "link": "https://html.spec.whatwg.org/multipage/" },
         { "label": "Node.js", "link": "https://nodejs.org/" },
-        { "label": "React", "link": "https://reactjs.org/" },
-        { "label": "bootstrap", "link": "https://getbootstrap.com/" },
-        { "label": "jQuery", "link": "https://jquery.com/" },
+        { "label": "React.js", "link": "https://reactjs.org/" },
+        { "label": "Bootstrap", "link": "https://getbootstrap.com" },
+        { "label": "jQuery", "link": "http://jquery.com/" },
         { "label": "MySQL", "link": "https://www.mysql.com/" },
         { "label": "PostgreSQL", "link": "https://www.postgresql.org/" },
-        { "label": "sass", "link": "http://sass-lang.com/" },
-        { "label": "less", "link": "http://lesscss.org/" }
+        { "label": "Sass CSS", "link": "https://sass-lang.com" },
+        { "label": "Less CSS", "link": "http://lesscss.org/" }
       ]
     },
     "programming": {
-      "title": "Programmation",
+      "title": "Langages de programmation",
       "subtitle": "Autres langages",
       "listing": "Liste de Langages",
       "list": [
         { "label": "Java", "link": "https://www.oracle.com/java/index.html" },
-        { "label": "actionScript", "link": "https://help.adobe.com/livedocs/specs/actionscript/3/wwhelp/wwhimpl/js/html/wwhelp.htm" },
-        { "label": "flex", "link": "https://www.adobe.com/products/flex.html" },
+        { "label": "ActionScript", "link": "https://help.adobe.com/livedocs/specs/actionscript/3/wwhelp/wwhimpl/js/html/wwhelp.htm" },
+        { "label": "Flex", "link": "https://flex.apache.org" },
         { "label": "Ruby on Rails", "link": "https://rubyonrails.org/" },
-        { "label": "python", "link": "https://www.python.org/" }
+        { "label": "Python", "link": "https://www.python.org/" },
+        { "label": "Bash", "link": "https://en.wikipedia.org/wiki/Bash" }
       ]
     },
     "os": {
       "title": "OS",
-      "subtitle": "Systèmes d'Exploitation",
-      "listing": "Liste d'OS",
-      "list": [
-        "Linux debian, redhat",
-        "Windows",
-        "Android",
-        "iOS/MacOS"
-      ]
+      "subtitle": "Systèmes d’exploitation",
+      "listing": "Liste des systèmes",
+      "list": [ "Linux", "Windows", "Android", "iOS/MacOS" ]
     },
     "tools": {
       "title": "Outils",
@@ -246,20 +218,13 @@
         { "label": "nginx", "link": "https://nginx.org/" },
         { "label": "apache", "link": "https://www.apache.org/" },
         { "label": "docker", "link": "https://www.docker.com/" },
-        { "label": "vagrant", "link": "https://www.vagrantup.com/" },
+        { "label": "RabbitMQ", "link": "https://www.rabbitmq.com/" },
         { "label": "Git", "link": "https://git-scm.com/" },
-        { "label": "svn", "link": "https://subversion.apache.org/" },
-        { "label": "office", "link": "https://www.libreoffice.org/" }
+        { "label": "Redis", "link": "https://redis.io" },
+        { "label": "Valkey", "link": "https://valkey.io" }
       ]
     }
   },
   "and": "et",
-  "backToTop": "Haut de page",
-  "sections": {
-    "highlights": "Points clés",
-    "experience": "Expérience",
-    "education": "Formation",
-    "skills": "Tech"
-  },
-  "highlights": "Modernized enterprise Magento backends; page gen time down ~30%. Message‑driven integrations (payments, tax, OMS/ERP); incidents reduced >50%. CI/CD, blue‑green deploys, observability; MTTR improved ~40%. Secure data flows (tokenization, rate limits, 2FA); zero PII leaks since rollout."
+  "backToTop": "Haut de page"
 }
